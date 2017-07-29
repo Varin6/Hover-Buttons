@@ -1,0 +1,17 @@
+
+
+.anibtn {
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0 6px 6px 6px;
+  text-align: center;
+  border: solid 2px $btncolor;
+  text-decoration: none;
+  color: $btncolor;
+  white-space: nowrap;
+  &-round {
+    @extend .anibtn;
+    border-radius: 50px;
+  }
+}

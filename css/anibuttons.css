@@ -1,0 +1,85 @@
+.anibtn, .anibtn-round {
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0 6px 6px 6px;
+  text-align: center;
+  border: solid 2px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.anibtn-round {
+  border-radius: 50px;
+}
+
+.tr-fill-top,
+.tr-fill-right,
+.tr-fill-bottom,
+.tr-fill-left {
+  position: relative;
+  transition-duration: .3s;
+}
+
+.tr-fill-top:before,
+.tr-fill-right:before,
+.tr-fill-bottom:before,
+.tr-fill-left:before {
+  position: absolute;
+  content: '';
+  background: #ffffff;
+  transition-duration: .3s;
+  z-index: -1;
+}
+
+.tr-fill-top:hover,
+.tr-fill-right:hover,
+.tr-fill-bottom:hover,
+.tr-fill-left:hover {
+  color: #000000;
+}
+
+.tr-fill-top:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+
+.tr-fill-top:hover:before {
+  height: 100%;
+}
+
+.tr-fill-right:before {
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.tr-fill-right:hover:before {
+  width: 100%;
+}
+
+.tr-fill-bottom:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+}
+
+.tr-fill-bottom:hover:before {
+  height: 100%;
+}
+
+.tr-fill-left:before {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.tr-fill-left:hover:before {
+  width: 100%;
+}
