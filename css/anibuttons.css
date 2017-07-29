@@ -2,7 +2,7 @@
   display: inline-block;
   overflow: hidden;
   padding: 8px 20px;
-  margin: 0 6px 6px 6px;
+  margin: 0 3px 6px 3px;
   text-align: center;
   border: solid 2px #ffffff;
   text-decoration: none;
@@ -17,7 +17,8 @@
 .tr-fill-top,
 .tr-fill-right,
 .tr-fill-bottom,
-.tr-fill-left {
+.tr-fill-left,
+.tr-fill-on {
   position: relative;
   transition-duration: .3s;
 }
@@ -25,7 +26,8 @@
 .tr-fill-top:before,
 .tr-fill-right:before,
 .tr-fill-bottom:before,
-.tr-fill-left:before {
+.tr-fill-left:before,
+.tr-fill-on:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -36,8 +38,39 @@
 .tr-fill-top:hover,
 .tr-fill-right:hover,
 .tr-fill-bottom:hover,
-.tr-fill-left:hover {
+.tr-fill-left:hover,
+.tr-fill-on:hover {
   color: #000000;
+}
+
+.tr-fill2-top,
+.tr-fill2-right,
+.tr-fill2-bottom,
+.tr-fill2-left,
+.tr-fill2-on {
+  color: #000000;
+  position: relative;
+  transition-duration: .3s;
+}
+
+.tr-fill2-top:before,
+.tr-fill2-right:before,
+.tr-fill2-bottom:before,
+.tr-fill2-left:before,
+.tr-fill2-on:before {
+  position: absolute;
+  content: '';
+  background: #ffffff;
+  transition-duration: .3s;
+  z-index: -1;
+}
+
+.tr-fill2-top:hover,
+.tr-fill2-right:hover,
+.tr-fill2-bottom:hover,
+.tr-fill2-left:hover,
+.tr-fill2-on:hover {
+  color: #ffffff;
 }
 
 .tr-fill-top:before {
@@ -82,4 +115,72 @@
 
 .tr-fill-left:hover:before {
   width: 100%;
+}
+
+.tr-fill-on:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.tr-fill-on:hover:before {
+  opacity: 1;
+}
+
+.tr-fill2-top:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tr-fill2-top:hover:before {
+  height: 0;
+}
+
+.tr-fill2-right:before {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tr-fill2-right:hover:before {
+  width: 0;
+}
+
+.tr-fill2-bottom:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tr-fill2-bottom:hover:before {
+  height: 0;
+}
+
+.tr-fill2-left:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tr-fill2-left:hover:before {
+  width: 0;
+}
+
+.tr-fill2-on:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.tr-fill2-on:hover:before {
+  opacity: 0;
 }
