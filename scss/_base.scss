@@ -8,7 +8,7 @@
   text-decoration: none;
   color: $btncolor;
   white-space: nowrap;
-  &-round {
+  &-pill {
     @extend .anibtn;
     border-radius: 50px;
   }

@@ -2,14 +2,16 @@
 // Fill Transitions
 //===================================
 
-
 .tr-fill-top,
 .tr-fill-right,
 .tr-fill-bottom,
 .tr-fill-left,
 .tr-fill-on {
   position: relative;
-  transition-duration: .3s;
+  //transition-duration: .5s;
+  transition: color 0.3s ease,
+              background 0s ease;
+  background: transparent;
   &:before {
     position: absolute;
     content: '';
@@ -19,6 +21,9 @@
   }
   &:hover {
     color: $txtcolorfill;
+    background: $btncolor;
+    transition: color 0.3s ease,
+                background 0s 0.3s ease;
   }
 }
 
@@ -27,9 +32,11 @@
 .tr-fill2-bottom,
 .tr-fill2-left,
 .tr-fill2-on{
+  background: $btncolor;
   color: $txtcolorfill;
   position: relative;
-  transition-duration: .3s;
+  transition: color 0.3s ease,
+              background 0s 0.3s ease;
   &:before {
     position: absolute;
     content: '';
@@ -38,7 +45,10 @@
     z-index: -1;
   }
   &:hover {
+    background: transparent;
     color: $txtcolor;
+    transition: color 0.3s ease,
+                background 0s ease;
   }
 }
 
