@@ -3,6 +3,25 @@
 //===================================
 
 .hbtn {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: $paddingY $paddingX;
+  margin: 0 3px 6px 3px;
+  text-align: center;
+  border: solid $btnborder $btncolor;
+  text-decoration: none;
+  color: $btncolor;
+  white-space: nowrap;
+  z-index: 0;
+  i {
+    padding-right: 8px;
+  }
+}
+
+
+.hbtn-pill {
+  box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
   padding: 8px 20px;
@@ -13,9 +32,8 @@
   color: $btncolor;
   white-space: nowrap;
   z-index: 0;
-}
-
-.hbtn-pill {
-  @extend .hbtn;
   border-radius: 50px;
+  i {
+    padding-right: 8px;
+  }
 }

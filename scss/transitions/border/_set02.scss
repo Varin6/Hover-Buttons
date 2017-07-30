@@ -1,0 +1,54 @@
+//===================================
+// Border Transitions - Set 02
+//===================================
+
+
+// Loop adding properties to classes
+
+.hbtn, .hbtn-pill {
+  @each $type in $borderproperties {
+    &.hb-border#{nth($type, 1)}2 {
+      border-color: nth($type, 2);
+      transition-duration: .3s;
+      &:hover {
+        border-color: nth($type, 3);
+      }
+    }
+  }
+  &.hb-border-top2 {
+    transition: all 0.1s 0s linear;
+    &:hover {
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      transition: all 0.1s 0s linear;
+    }
+  }
+  &.hb-border-right2 {
+    transition: all 0s 0s linear;
+    &:hover {
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      transition: all 0.1s 0s linear;
+    }
+  }
+  &.hb-border-bottom2 {
+    transition: all 0.1s 0s linear;
+    &:hover {
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      transition: all 0.1s 0s linear;
+    }
+  }
+  &.hb-border-left2 {
+    transition: all 0.1s 0s linear;
+    &:hover {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      transition: all 0.1s 0s linear;
+    }
+  }
+}

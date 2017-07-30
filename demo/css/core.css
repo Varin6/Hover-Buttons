@@ -1,25 +1,45 @@
-.hbtn, .hbtn-pill {
+.hbtn {
+  box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
   padding: 8px 20px;
   margin: 0 3px 6px 3px;
   text-align: center;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
   text-decoration: none;
   color: #ffffff;
   white-space: nowrap;
   z-index: 0;
 }
 
+.hbtn i {
+  padding-right: 8px;
+}
+
 .hbtn-pill {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0 3px 6px 3px;
+  text-align: center;
+  border: solid 3px #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  white-space: nowrap;
+  z-index: 0;
   border-radius: 50px;
 }
 
-.hbtn.hb-fill-on, .hb-fill-on.hbtn-pill, .hbtn-pill.hb-fill-on {
+.hbtn-pill i {
+  padding-right: 8px;
+}
+
+.hbtn.hb-fill-on, .hbtn-pill.hb-fill-on {
   position: relative;
 }
 
-.hbtn.hb-fill-on:before, .hb-fill-on.hbtn-pill:before, .hbtn-pill.hb-fill-on:before {
+.hbtn.hb-fill-on:before, .hbtn-pill.hb-fill-on:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -34,17 +54,17 @@
   opacity: 0;
 }
 
-.hbtn.hb-fill-on:hover:before, .hb-fill-on.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on:hover:before {
+.hbtn.hb-fill-on:hover:before, .hbtn-pill.hb-fill-on:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-top, .hb-fill-top.hbtn-pill, .hbtn-pill.hb-fill-top {
+.hbtn.hb-fill-top, .hbtn-pill.hb-fill-top {
   position: relative;
 }
 
-.hbtn.hb-fill-top:before, .hb-fill-top.hbtn-pill:before, .hbtn-pill.hb-fill-top:before {
+.hbtn.hb-fill-top:before, .hbtn-pill.hb-fill-top:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -59,17 +79,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top:hover:before, .hb-fill-top.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top:hover:before {
+.hbtn.hb-fill-top:hover:before, .hbtn-pill.hb-fill-top:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right, .hb-fill-right.hbtn-pill, .hbtn-pill.hb-fill-right {
+.hbtn.hb-fill-right, .hbtn-pill.hb-fill-right {
   position: relative;
 }
 
-.hbtn.hb-fill-right:before, .hb-fill-right.hbtn-pill:before, .hbtn-pill.hb-fill-right:before {
+.hbtn.hb-fill-right:before, .hbtn-pill.hb-fill-right:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -84,17 +104,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-right:hover:before, .hb-fill-right.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right:hover:before {
+.hbtn.hb-fill-right:hover:before, .hbtn-pill.hb-fill-right:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom, .hb-fill-bottom.hbtn-pill, .hbtn-pill.hb-fill-bottom {
+.hbtn.hb-fill-bottom, .hbtn-pill.hb-fill-bottom {
   position: relative;
 }
 
-.hbtn.hb-fill-bottom:before, .hb-fill-bottom.hbtn-pill:before, .hbtn-pill.hb-fill-bottom:before {
+.hbtn.hb-fill-bottom:before, .hbtn-pill.hb-fill-bottom:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -109,17 +129,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom:hover:before, .hb-fill-bottom.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom:hover:before {
+.hbtn.hb-fill-bottom:hover:before, .hbtn-pill.hb-fill-bottom:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left, .hb-fill-left.hbtn-pill, .hbtn-pill.hb-fill-left {
+.hbtn.hb-fill-left, .hbtn-pill.hb-fill-left {
   position: relative;
 }
 
-.hbtn.hb-fill-left:before, .hb-fill-left.hbtn-pill:before, .hbtn-pill.hb-fill-left:before {
+.hbtn.hb-fill-left:before, .hbtn-pill.hb-fill-left:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -134,17 +154,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left:hover:before, .hb-fill-left.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left:hover:before {
+.hbtn.hb-fill-left:hover:before, .hbtn-pill.hb-fill-left:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev, .hb-fill-on-rev.hbtn-pill, .hbtn-pill.hb-fill-on-rev {
+.hbtn.hb-fill-on-rev, .hbtn-pill.hb-fill-on-rev {
   position: relative;
 }
 
-.hbtn.hb-fill-on-rev:before, .hb-fill-on-rev.hbtn-pill:before, .hbtn-pill.hb-fill-on-rev:before {
+.hbtn.hb-fill-on-rev:before, .hbtn-pill.hb-fill-on-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -159,17 +179,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev:hover:before, .hb-fill-on-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-rev:hover:before {
+.hbtn.hb-fill-on-rev:hover:before, .hbtn-pill.hb-fill-on-rev:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.hbtn.hb-fill-top-rev, .hb-fill-top-rev.hbtn-pill, .hbtn-pill.hb-fill-top-rev {
+.hbtn.hb-fill-top-rev, .hbtn-pill.hb-fill-top-rev {
   position: relative;
 }
 
-.hbtn.hb-fill-top-rev:before, .hb-fill-top-rev.hbtn-pill:before, .hbtn-pill.hb-fill-top-rev:before {
+.hbtn.hb-fill-top-rev:before, .hbtn-pill.hb-fill-top-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -184,17 +204,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-rev:hover:before, .hb-fill-top-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-rev:hover:before {
+.hbtn.hb-fill-top-rev:hover:before, .hbtn-pill.hb-fill-top-rev:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev, .hb-fill-right-rev.hbtn-pill, .hbtn-pill.hb-fill-right-rev {
+.hbtn.hb-fill-right-rev, .hbtn-pill.hb-fill-right-rev {
   position: relative;
 }
 
-.hbtn.hb-fill-right-rev:before, .hb-fill-right-rev.hbtn-pill:before, .hbtn-pill.hb-fill-right-rev:before {
+.hbtn.hb-fill-right-rev:before, .hbtn-pill.hb-fill-right-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -209,17 +229,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev:hover:before, .hb-fill-right-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-rev:hover:before {
+.hbtn.hb-fill-right-rev:hover:before, .hbtn-pill.hb-fill-right-rev:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev, .hb-fill-bottom-rev.hbtn-pill, .hbtn-pill.hb-fill-bottom-rev {
+.hbtn.hb-fill-bottom-rev, .hbtn-pill.hb-fill-bottom-rev {
   position: relative;
 }
 
-.hbtn.hb-fill-bottom-rev:before, .hb-fill-bottom-rev.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-rev:before {
+.hbtn.hb-fill-bottom-rev:before, .hbtn-pill.hb-fill-bottom-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -234,17 +254,17 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev:hover:before, .hb-fill-bottom-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-rev:hover:before {
+.hbtn.hb-fill-bottom-rev:hover:before, .hbtn-pill.hb-fill-bottom-rev:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev, .hb-fill-left-rev.hbtn-pill, .hbtn-pill.hb-fill-left-rev {
+.hbtn.hb-fill-left-rev, .hbtn-pill.hb-fill-left-rev {
   position: relative;
 }
 
-.hbtn.hb-fill-left-rev:before, .hb-fill-left-rev.hbtn-pill:before, .hbtn-pill.hb-fill-left-rev:before {
+.hbtn.hb-fill-left-rev:before, .hbtn-pill.hb-fill-left-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -259,7 +279,7 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev:hover:before, .hb-fill-left-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-rev:hover:before {
+.hbtn.hb-fill-left-rev:hover:before, .hbtn-pill.hb-fill-left-rev:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
@@ -289,12 +309,12 @@
   transition: color 0.3s ease, background 0s ease;
 }
 
-.hbtn.hb-fill-on-bg, .hb-fill-on-bg.hbtn-pill, .hbtn-pill.hb-fill-on-bg {
+.hbtn.hb-fill-on-bg, .hbtn-pill.hb-fill-on-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-bg:before, .hb-fill-on-bg.hbtn-pill:before, .hbtn-pill.hb-fill-on-bg:before {
+.hbtn.hb-fill-on-bg:before, .hbtn-pill.hb-fill-on-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -309,22 +329,22 @@
   opacity: 0;
 }
 
-.hbtn.hb-fill-on-bg:hover, .hb-fill-on-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-on-bg:hover {
+.hbtn.hb-fill-on-bg:hover, .hbtn-pill.hb-fill-on-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-bg:hover:before, .hb-fill-on-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-bg:hover:before {
+.hbtn.hb-fill-on-bg:hover:before, .hbtn-pill.hb-fill-on-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-bg, .hb-fill-top-bg.hbtn-pill, .hbtn-pill.hb-fill-top-bg {
+.hbtn.hb-fill-top-bg, .hbtn-pill.hb-fill-top-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-bg:before, .hb-fill-top-bg.hbtn-pill:before, .hbtn-pill.hb-fill-top-bg:before {
+.hbtn.hb-fill-top-bg:before, .hbtn-pill.hb-fill-top-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -339,22 +359,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-bg:hover, .hb-fill-top-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-top-bg:hover {
+.hbtn.hb-fill-top-bg:hover, .hbtn-pill.hb-fill-top-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-bg:hover:before, .hb-fill-top-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-bg:hover:before {
+.hbtn.hb-fill-top-bg:hover:before, .hbtn-pill.hb-fill-top-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-bg, .hb-fill-right-bg.hbtn-pill, .hbtn-pill.hb-fill-right-bg {
+.hbtn.hb-fill-right-bg, .hbtn-pill.hb-fill-right-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-bg:before, .hb-fill-right-bg.hbtn-pill:before, .hbtn-pill.hb-fill-right-bg:before {
+.hbtn.hb-fill-right-bg:before, .hbtn-pill.hb-fill-right-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -369,22 +389,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-bg:hover, .hb-fill-right-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-right-bg:hover {
+.hbtn.hb-fill-right-bg:hover, .hbtn-pill.hb-fill-right-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-bg:hover:before, .hb-fill-right-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-bg:hover:before {
+.hbtn.hb-fill-right-bg:hover:before, .hbtn-pill.hb-fill-right-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-bg, .hb-fill-bottom-bg.hbtn-pill, .hbtn-pill.hb-fill-bottom-bg {
+.hbtn.hb-fill-bottom-bg, .hbtn-pill.hb-fill-bottom-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-bg:before, .hb-fill-bottom-bg.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-bg:before {
+.hbtn.hb-fill-bottom-bg:before, .hbtn-pill.hb-fill-bottom-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -399,22 +419,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-bg:hover, .hb-fill-bottom-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-bottom-bg:hover {
+.hbtn.hb-fill-bottom-bg:hover, .hbtn-pill.hb-fill-bottom-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-bg:hover:before, .hb-fill-bottom-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-bg:hover:before {
+.hbtn.hb-fill-bottom-bg:hover:before, .hbtn-pill.hb-fill-bottom-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-bg, .hb-fill-left-bg.hbtn-pill, .hbtn-pill.hb-fill-left-bg {
+.hbtn.hb-fill-left-bg, .hbtn-pill.hb-fill-left-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-bg:before, .hb-fill-left-bg.hbtn-pill:before, .hbtn-pill.hb-fill-left-bg:before {
+.hbtn.hb-fill-left-bg:before, .hbtn-pill.hb-fill-left-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -429,22 +449,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-bg:hover, .hb-fill-left-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-left-bg:hover {
+.hbtn.hb-fill-left-bg:hover, .hbtn-pill.hb-fill-left-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-bg:hover:before, .hb-fill-left-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-bg:hover:before {
+.hbtn.hb-fill-left-bg:hover:before, .hbtn-pill.hb-fill-left-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev-bg, .hb-fill-on-rev-bg.hbtn-pill, .hbtn-pill.hb-fill-on-rev-bg {
+.hbtn.hb-fill-on-rev-bg, .hbtn-pill.hb-fill-on-rev-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-rev-bg:before, .hb-fill-on-rev-bg.hbtn-pill:before, .hbtn-pill.hb-fill-on-rev-bg:before {
+.hbtn.hb-fill-on-rev-bg:before, .hbtn-pill.hb-fill-on-rev-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -459,22 +479,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev-bg:hover, .hb-fill-on-rev-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-on-rev-bg:hover {
+.hbtn.hb-fill-on-rev-bg:hover, .hbtn-pill.hb-fill-on-rev-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-rev-bg:hover:before, .hb-fill-on-rev-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-rev-bg:hover:before {
+.hbtn.hb-fill-on-rev-bg:hover:before, .hbtn-pill.hb-fill-on-rev-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.hbtn.hb-fill-top-rev-bg, .hb-fill-top-rev-bg.hbtn-pill, .hbtn-pill.hb-fill-top-rev-bg {
+.hbtn.hb-fill-top-rev-bg, .hbtn-pill.hb-fill-top-rev-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-rev-bg:before, .hb-fill-top-rev-bg.hbtn-pill:before, .hbtn-pill.hb-fill-top-rev-bg:before {
+.hbtn.hb-fill-top-rev-bg:before, .hbtn-pill.hb-fill-top-rev-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -489,22 +509,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-rev-bg:hover, .hb-fill-top-rev-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-top-rev-bg:hover {
+.hbtn.hb-fill-top-rev-bg:hover, .hbtn-pill.hb-fill-top-rev-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-rev-bg:hover:before, .hb-fill-top-rev-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-rev-bg:hover:before {
+.hbtn.hb-fill-top-rev-bg:hover:before, .hbtn-pill.hb-fill-top-rev-bg:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev-bg, .hb-fill-right-rev-bg.hbtn-pill, .hbtn-pill.hb-fill-right-rev-bg {
+.hbtn.hb-fill-right-rev-bg, .hbtn-pill.hb-fill-right-rev-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-rev-bg:before, .hb-fill-right-rev-bg.hbtn-pill:before, .hbtn-pill.hb-fill-right-rev-bg:before {
+.hbtn.hb-fill-right-rev-bg:before, .hbtn-pill.hb-fill-right-rev-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -519,22 +539,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev-bg:hover, .hb-fill-right-rev-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-right-rev-bg:hover {
+.hbtn.hb-fill-right-rev-bg:hover, .hbtn-pill.hb-fill-right-rev-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-rev-bg:hover:before, .hb-fill-right-rev-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-rev-bg:hover:before {
+.hbtn.hb-fill-right-rev-bg:hover:before, .hbtn-pill.hb-fill-right-rev-bg:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev-bg, .hb-fill-bottom-rev-bg.hbtn-pill, .hbtn-pill.hb-fill-bottom-rev-bg {
+.hbtn.hb-fill-bottom-rev-bg, .hbtn-pill.hb-fill-bottom-rev-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-rev-bg:before, .hb-fill-bottom-rev-bg.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-rev-bg:before {
+.hbtn.hb-fill-bottom-rev-bg:before, .hbtn-pill.hb-fill-bottom-rev-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -549,22 +569,22 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev-bg:hover, .hb-fill-bottom-rev-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-bottom-rev-bg:hover {
+.hbtn.hb-fill-bottom-rev-bg:hover, .hbtn-pill.hb-fill-bottom-rev-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-rev-bg:hover:before, .hb-fill-bottom-rev-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-rev-bg:hover:before {
+.hbtn.hb-fill-bottom-rev-bg:hover:before, .hbtn-pill.hb-fill-bottom-rev-bg:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev-bg, .hb-fill-left-rev-bg.hbtn-pill, .hbtn-pill.hb-fill-left-rev-bg {
+.hbtn.hb-fill-left-rev-bg, .hbtn-pill.hb-fill-left-rev-bg {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-rev-bg:before, .hb-fill-left-rev-bg.hbtn-pill:before, .hbtn-pill.hb-fill-left-rev-bg:before {
+.hbtn.hb-fill-left-rev-bg:before, .hbtn-pill.hb-fill-left-rev-bg:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -579,11 +599,11 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev-bg:hover, .hb-fill-left-rev-bg.hbtn-pill:hover, .hbtn-pill.hb-fill-left-rev-bg:hover {
+.hbtn.hb-fill-left-rev-bg:hover, .hbtn-pill.hb-fill-left-rev-bg:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-rev-bg:hover:before, .hb-fill-left-rev-bg.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-rev-bg:hover:before {
+.hbtn.hb-fill-left-rev-bg:hover:before, .hbtn-pill.hb-fill-left-rev-bg:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
@@ -613,11 +633,11 @@
   transition: color 0.3s ease, background 0s ease;
 }
 
-.hbtn.hb-fill-on-br, .hb-fill-on-br.hbtn-pill, .hbtn-pill.hb-fill-on-br {
+.hbtn.hb-fill-on-br, .hbtn-pill.hb-fill-on-br {
   position: relative;
 }
 
-.hbtn.hb-fill-on-br:before, .hb-fill-on-br.hbtn-pill:before, .hbtn-pill.hb-fill-on-br:before {
+.hbtn.hb-fill-on-br:before, .hbtn-pill.hb-fill-on-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -630,20 +650,20 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-on-br:hover:before, .hb-fill-on-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-br:hover:before {
+.hbtn.hb-fill-on-br:hover:before, .hbtn-pill.hb-fill-on-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-br, .hb-fill-top-br.hbtn-pill, .hbtn-pill.hb-fill-top-br {
+.hbtn.hb-fill-top-br, .hbtn-pill.hb-fill-top-br {
   position: relative;
 }
 
-.hbtn.hb-fill-top-br:before, .hb-fill-top-br.hbtn-pill:before, .hbtn-pill.hb-fill-top-br:before {
+.hbtn.hb-fill-top-br:before, .hbtn-pill.hb-fill-top-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -656,20 +676,20 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-top-br:hover:before, .hb-fill-top-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-br:hover:before {
+.hbtn.hb-fill-top-br:hover:before, .hbtn-pill.hb-fill-top-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-br, .hb-fill-right-br.hbtn-pill, .hbtn-pill.hb-fill-right-br {
+.hbtn.hb-fill-right-br, .hbtn-pill.hb-fill-right-br {
   position: relative;
 }
 
-.hbtn.hb-fill-right-br:before, .hb-fill-right-br.hbtn-pill:before, .hbtn-pill.hb-fill-right-br:before {
+.hbtn.hb-fill-right-br:before, .hbtn-pill.hb-fill-right-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -682,20 +702,20 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-right-br:hover:before, .hb-fill-right-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-br:hover:before {
+.hbtn.hb-fill-right-br:hover:before, .hbtn-pill.hb-fill-right-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-br, .hb-fill-bottom-br.hbtn-pill, .hbtn-pill.hb-fill-bottom-br {
+.hbtn.hb-fill-bottom-br, .hbtn-pill.hb-fill-bottom-br {
   position: relative;
 }
 
-.hbtn.hb-fill-bottom-br:before, .hb-fill-bottom-br.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-br:before {
+.hbtn.hb-fill-bottom-br:before, .hbtn-pill.hb-fill-bottom-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -708,20 +728,20 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-bottom-br:hover:before, .hb-fill-bottom-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-br:hover:before {
+.hbtn.hb-fill-bottom-br:hover:before, .hbtn-pill.hb-fill-bottom-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-br, .hb-fill-left-br.hbtn-pill, .hbtn-pill.hb-fill-left-br {
+.hbtn.hb-fill-left-br, .hbtn-pill.hb-fill-left-br {
   position: relative;
 }
 
-.hbtn.hb-fill-left-br:before, .hb-fill-left-br.hbtn-pill:before, .hbtn-pill.hb-fill-left-br:before {
+.hbtn.hb-fill-left-br:before, .hbtn-pill.hb-fill-left-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -734,20 +754,20 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-left-br:hover:before, .hb-fill-left-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-br:hover:before {
+.hbtn.hb-fill-left-br:hover:before, .hbtn-pill.hb-fill-left-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev-br, .hb-fill-on-rev-br.hbtn-pill, .hbtn-pill.hb-fill-on-rev-br {
+.hbtn.hb-fill-on-rev-br, .hbtn-pill.hb-fill-on-rev-br {
   position: relative;
 }
 
-.hbtn.hb-fill-on-rev-br:before, .hb-fill-on-rev-br.hbtn-pill:before, .hbtn-pill.hb-fill-on-rev-br:before {
+.hbtn.hb-fill-on-rev-br:before, .hbtn-pill.hb-fill-on-rev-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -760,20 +780,20 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-on-rev-br:hover:before, .hb-fill-on-rev-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-rev-br:hover:before {
+.hbtn.hb-fill-on-rev-br:hover:before, .hbtn-pill.hb-fill-on-rev-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.hbtn.hb-fill-top-rev-br, .hb-fill-top-rev-br.hbtn-pill, .hbtn-pill.hb-fill-top-rev-br {
+.hbtn.hb-fill-top-rev-br, .hbtn-pill.hb-fill-top-rev-br {
   position: relative;
 }
 
-.hbtn.hb-fill-top-rev-br:before, .hb-fill-top-rev-br.hbtn-pill:before, .hbtn-pill.hb-fill-top-rev-br:before {
+.hbtn.hb-fill-top-rev-br:before, .hbtn-pill.hb-fill-top-rev-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -786,20 +806,20 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-top-rev-br:hover:before, .hb-fill-top-rev-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-rev-br:hover:before {
+.hbtn.hb-fill-top-rev-br:hover:before, .hbtn-pill.hb-fill-top-rev-br:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev-br, .hb-fill-right-rev-br.hbtn-pill, .hbtn-pill.hb-fill-right-rev-br {
+.hbtn.hb-fill-right-rev-br, .hbtn-pill.hb-fill-right-rev-br {
   position: relative;
 }
 
-.hbtn.hb-fill-right-rev-br:before, .hb-fill-right-rev-br.hbtn-pill:before, .hbtn-pill.hb-fill-right-rev-br:before {
+.hbtn.hb-fill-right-rev-br:before, .hbtn-pill.hb-fill-right-rev-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -812,20 +832,20 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-right-rev-br:hover:before, .hb-fill-right-rev-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-rev-br:hover:before {
+.hbtn.hb-fill-right-rev-br:hover:before, .hbtn-pill.hb-fill-right-rev-br:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev-br, .hb-fill-bottom-rev-br.hbtn-pill, .hbtn-pill.hb-fill-bottom-rev-br {
+.hbtn.hb-fill-bottom-rev-br, .hbtn-pill.hb-fill-bottom-rev-br {
   position: relative;
 }
 
-.hbtn.hb-fill-bottom-rev-br:before, .hb-fill-bottom-rev-br.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-rev-br:before {
+.hbtn.hb-fill-bottom-rev-br:before, .hbtn-pill.hb-fill-bottom-rev-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -838,20 +858,20 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-bottom-rev-br:hover:before, .hb-fill-bottom-rev-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-rev-br:hover:before {
+.hbtn.hb-fill-bottom-rev-br:hover:before, .hbtn-pill.hb-fill-bottom-rev-br:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev-br, .hb-fill-left-rev-br.hbtn-pill, .hbtn-pill.hb-fill-left-rev-br {
+.hbtn.hb-fill-left-rev-br, .hbtn-pill.hb-fill-left-rev-br {
   position: relative;
 }
 
-.hbtn.hb-fill-left-rev-br:before, .hb-fill-left-rev-br.hbtn-pill:before, .hbtn-pill.hb-fill-left-rev-br:before {
+.hbtn.hb-fill-left-rev-br:before, .hbtn-pill.hb-fill-left-rev-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -864,10 +884,10 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-left-rev-br:hover:before, .hb-fill-left-rev-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-rev-br:hover:before {
+.hbtn.hb-fill-left-rev-br:hover:before, .hbtn-pill.hb-fill-left-rev-br:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
@@ -897,12 +917,12 @@
   transition: color 0.3s ease, background 0s ease;
 }
 
-.hbtn.hb-fill-on-bg-br, .hb-fill-on-bg-br.hbtn-pill, .hbtn-pill.hb-fill-on-bg-br {
+.hbtn.hb-fill-on-bg-br, .hbtn-pill.hb-fill-on-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-bg-br:before, .hb-fill-on-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-on-bg-br:before {
+.hbtn.hb-fill-on-bg-br:before, .hbtn-pill.hb-fill-on-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -915,25 +935,25 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-on-bg-br:hover, .hb-fill-on-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-on-bg-br:hover {
+.hbtn.hb-fill-on-bg-br:hover, .hbtn-pill.hb-fill-on-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-bg-br:hover:before, .hb-fill-on-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-bg-br:hover:before {
+.hbtn.hb-fill-on-bg-br:hover:before, .hbtn-pill.hb-fill-on-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-bg-br, .hb-fill-top-bg-br.hbtn-pill, .hbtn-pill.hb-fill-top-bg-br {
+.hbtn.hb-fill-top-bg-br, .hbtn-pill.hb-fill-top-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-bg-br:before, .hb-fill-top-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-top-bg-br:before {
+.hbtn.hb-fill-top-bg-br:before, .hbtn-pill.hb-fill-top-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -946,25 +966,25 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-top-bg-br:hover, .hb-fill-top-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-top-bg-br:hover {
+.hbtn.hb-fill-top-bg-br:hover, .hbtn-pill.hb-fill-top-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-bg-br:hover:before, .hb-fill-top-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-bg-br:hover:before {
+.hbtn.hb-fill-top-bg-br:hover:before, .hbtn-pill.hb-fill-top-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-bg-br, .hb-fill-right-bg-br.hbtn-pill, .hbtn-pill.hb-fill-right-bg-br {
+.hbtn.hb-fill-right-bg-br, .hbtn-pill.hb-fill-right-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-bg-br:before, .hb-fill-right-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-right-bg-br:before {
+.hbtn.hb-fill-right-bg-br:before, .hbtn-pill.hb-fill-right-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -977,25 +997,25 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-right-bg-br:hover, .hb-fill-right-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-right-bg-br:hover {
+.hbtn.hb-fill-right-bg-br:hover, .hbtn-pill.hb-fill-right-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-bg-br:hover:before, .hb-fill-right-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-bg-br:hover:before {
+.hbtn.hb-fill-right-bg-br:hover:before, .hbtn-pill.hb-fill-right-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-bg-br, .hb-fill-bottom-bg-br.hbtn-pill, .hbtn-pill.hb-fill-bottom-bg-br {
+.hbtn.hb-fill-bottom-bg-br, .hbtn-pill.hb-fill-bottom-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-bg-br:before, .hb-fill-bottom-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-bg-br:before {
+.hbtn.hb-fill-bottom-bg-br:before, .hbtn-pill.hb-fill-bottom-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1008,25 +1028,25 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-bottom-bg-br:hover, .hb-fill-bottom-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-bottom-bg-br:hover {
+.hbtn.hb-fill-bottom-bg-br:hover, .hbtn-pill.hb-fill-bottom-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-bg-br:hover:before, .hb-fill-bottom-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-bg-br:hover:before {
+.hbtn.hb-fill-bottom-bg-br:hover:before, .hbtn-pill.hb-fill-bottom-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-bg-br, .hb-fill-left-bg-br.hbtn-pill, .hbtn-pill.hb-fill-left-bg-br {
+.hbtn.hb-fill-left-bg-br, .hbtn-pill.hb-fill-left-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-bg-br:before, .hb-fill-left-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-left-bg-br:before {
+.hbtn.hb-fill-left-bg-br:before, .hbtn-pill.hb-fill-left-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1039,25 +1059,25 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-left-bg-br:hover, .hb-fill-left-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-left-bg-br:hover {
+.hbtn.hb-fill-left-bg-br:hover, .hbtn-pill.hb-fill-left-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-bg-br:hover:before, .hb-fill-left-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-bg-br:hover:before {
+.hbtn.hb-fill-left-bg-br:hover:before, .hbtn-pill.hb-fill-left-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev-bg-br, .hb-fill-on-rev-bg-br.hbtn-pill, .hbtn-pill.hb-fill-on-rev-bg-br {
+.hbtn.hb-fill-on-rev-bg-br, .hbtn-pill.hb-fill-on-rev-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-rev-bg-br:before, .hb-fill-on-rev-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-on-rev-bg-br:before {
+.hbtn.hb-fill-on-rev-bg-br:before, .hbtn-pill.hb-fill-on-rev-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1070,25 +1090,25 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-on-rev-bg-br:hover, .hb-fill-on-rev-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-on-rev-bg-br:hover {
+.hbtn.hb-fill-on-rev-bg-br:hover, .hbtn-pill.hb-fill-on-rev-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-on-rev-bg-br:hover:before, .hb-fill-on-rev-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-rev-bg-br:hover:before {
+.hbtn.hb-fill-on-rev-bg-br:hover:before, .hbtn-pill.hb-fill-on-rev-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.hbtn.hb-fill-top-rev-bg-br, .hb-fill-top-rev-bg-br.hbtn-pill, .hbtn-pill.hb-fill-top-rev-bg-br {
+.hbtn.hb-fill-top-rev-bg-br, .hbtn-pill.hb-fill-top-rev-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-rev-bg-br:before, .hb-fill-top-rev-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-top-rev-bg-br:before {
+.hbtn.hb-fill-top-rev-bg-br:before, .hbtn-pill.hb-fill-top-rev-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1101,25 +1121,25 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-top-rev-bg-br:hover, .hb-fill-top-rev-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-top-rev-bg-br:hover {
+.hbtn.hb-fill-top-rev-bg-br:hover, .hbtn-pill.hb-fill-top-rev-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-top-rev-bg-br:hover:before, .hb-fill-top-rev-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-rev-bg-br:hover:before {
+.hbtn.hb-fill-top-rev-bg-br:hover:before, .hbtn-pill.hb-fill-top-rev-bg-br:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev-bg-br, .hb-fill-right-rev-bg-br.hbtn-pill, .hbtn-pill.hb-fill-right-rev-bg-br {
+.hbtn.hb-fill-right-rev-bg-br, .hbtn-pill.hb-fill-right-rev-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-rev-bg-br:before, .hb-fill-right-rev-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-right-rev-bg-br:before {
+.hbtn.hb-fill-right-rev-bg-br:before, .hbtn-pill.hb-fill-right-rev-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1132,25 +1152,25 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-right-rev-bg-br:hover, .hb-fill-right-rev-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-right-rev-bg-br:hover {
+.hbtn.hb-fill-right-rev-bg-br:hover, .hbtn-pill.hb-fill-right-rev-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-right-rev-bg-br:hover:before, .hb-fill-right-rev-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-rev-bg-br:hover:before {
+.hbtn.hb-fill-right-rev-bg-br:hover:before, .hbtn-pill.hb-fill-right-rev-bg-br:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev-bg-br, .hb-fill-bottom-rev-bg-br.hbtn-pill, .hbtn-pill.hb-fill-bottom-rev-bg-br {
+.hbtn.hb-fill-bottom-rev-bg-br, .hbtn-pill.hb-fill-bottom-rev-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-rev-bg-br:before, .hb-fill-bottom-rev-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-rev-bg-br:before {
+.hbtn.hb-fill-bottom-rev-bg-br:before, .hbtn-pill.hb-fill-bottom-rev-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1163,25 +1183,25 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-bottom-rev-bg-br:hover, .hb-fill-bottom-rev-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-bottom-rev-bg-br:hover {
+.hbtn.hb-fill-bottom-rev-bg-br:hover, .hbtn-pill.hb-fill-bottom-rev-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-bottom-rev-bg-br:hover:before, .hb-fill-bottom-rev-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-rev-bg-br:hover:before {
+.hbtn.hb-fill-bottom-rev-bg-br:hover:before, .hbtn-pill.hb-fill-bottom-rev-bg-br:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev-bg-br, .hb-fill-left-rev-bg-br.hbtn-pill, .hbtn-pill.hb-fill-left-rev-bg-br {
+.hbtn.hb-fill-left-rev-bg-br, .hbtn-pill.hb-fill-left-rev-bg-br {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-rev-bg-br:before, .hb-fill-left-rev-bg-br.hbtn-pill:before, .hbtn-pill.hb-fill-left-rev-bg-br:before {
+.hbtn.hb-fill-left-rev-bg-br:before, .hbtn-pill.hb-fill-left-rev-bg-br:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -1194,14 +1214,14 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 2px #ffffff;
+  border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-left-rev-bg-br:hover, .hb-fill-left-rev-bg-br.hbtn-pill:hover, .hbtn-pill.hb-fill-left-rev-bg-br:hover {
+.hbtn.hb-fill-left-rev-bg-br:hover, .hbtn-pill.hb-fill-left-rev-bg-br:hover {
   transition: all 0.3s ease;
 }
 
-.hbtn.hb-fill-left-rev-bg-br:hover:before, .hb-fill-left-rev-bg-br.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-rev-bg-br:hover:before {
+.hbtn.hb-fill-left-rev-bg-br:hover:before, .hbtn-pill.hb-fill-left-rev-bg-br:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
@@ -1231,74 +1251,74 @@
   transition: color 0.3s ease, background 0s ease;
 }
 
-.hbtn.hb-border-off, .hb-border-off.hbtn-pill, .hbtn-pill.hb-border-off {
+.hbtn.hb-border-off, .hbtn-pill.hb-border-off {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-off:hover, .hb-border-off.hbtn-pill:hover, .hbtn-pill.hb-border-off:hover {
+.hbtn.hb-border-off:hover, .hbtn-pill.hb-border-off:hover {
   border-color: transparent;
 }
 
-.hbtn.hb-border-off2, .hb-border-off2.hbtn-pill, .hbtn-pill.hb-border-off2 {
+.hbtn.hb-border-off2, .hbtn-pill.hb-border-off2 {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-off2:hover, .hb-border-off2.hbtn-pill:hover, .hbtn-pill.hb-border-off2:hover {
+.hbtn.hb-border-off2:hover, .hbtn-pill.hb-border-off2:hover {
   border-color: initial;
 }
 
-.hbtn.hb-border-off3, .hb-border-off3.hbtn-pill, .hbtn-pill.hb-border-off3 {
+.hbtn.hb-border-off3, .hbtn-pill.hb-border-off3 {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-off3:hover, .hb-border-off3.hbtn-pill:hover, .hbtn-pill.hb-border-off3:hover {
+.hbtn.hb-border-off3:hover, .hbtn-pill.hb-border-off3:hover {
   border-color: initial;
 }
 
-.hbtn.hb-border-top, .hb-border-top.hbtn-pill, .hbtn-pill.hb-border-top {
+.hbtn.hb-border-top, .hbtn-pill.hb-border-top {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-top:hover, .hb-border-top.hbtn-pill:hover, .hbtn-pill.hb-border-top:hover {
+.hbtn.hb-border-top:hover, .hbtn-pill.hb-border-top:hover {
   border-color: initial;
 }
 
-.hbtn.hb-border-right, .hb-border-right.hbtn-pill, .hbtn-pill.hb-border-right {
+.hbtn.hb-border-right, .hbtn-pill.hb-border-right {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-right:hover, .hb-border-right.hbtn-pill:hover, .hbtn-pill.hb-border-right:hover {
+.hbtn.hb-border-right:hover, .hbtn-pill.hb-border-right:hover {
   border-color: initial;
 }
 
-.hbtn.hb-border-bottom, .hb-border-bottom.hbtn-pill, .hbtn-pill.hb-border-bottom {
+.hbtn.hb-border-bottom, .hbtn-pill.hb-border-bottom {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-bottom:hover, .hb-border-bottom.hbtn-pill:hover, .hbtn-pill.hb-border-bottom:hover {
+.hbtn.hb-border-bottom:hover, .hbtn-pill.hb-border-bottom:hover {
   border-color: initial;
 }
 
-.hbtn.hb-border-left, .hb-border-left.hbtn-pill, .hbtn-pill.hb-border-left {
+.hbtn.hb-border-left, .hbtn-pill.hb-border-left {
   border-color: #ffffff;
   transition-duration: .3s;
 }
 
-.hbtn.hb-border-left:hover, .hb-border-left.hbtn-pill:hover, .hbtn-pill.hb-border-left:hover {
+.hbtn.hb-border-left:hover, .hbtn-pill.hb-border-left:hover {
   border-color: initial;
 }
 
-.hbtn.hb-border-off2, .hb-border-off2.hbtn-pill, .hbtn-pill.hb-border-off2 {
+.hbtn.hb-border-off2, .hbtn-pill.hb-border-off2 {
   transition: border-top-color 0.1s 0.21s linear, border-right-color 0.1s 0.14s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0s linear;
 }
 
-.hbtn.hb-border-off2:hover, .hb-border-off2.hbtn-pill:hover, .hbtn-pill.hb-border-off2:hover {
+.hbtn.hb-border-off2:hover, .hbtn-pill.hb-border-off2:hover {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -1306,11 +1326,11 @@
   transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.21s linear;
 }
 
-.hbtn.hb-border-off3, .hb-border-off3.hbtn-pill, .hbtn-pill.hb-border-off3 {
+.hbtn.hb-border-off3, .hbtn-pill.hb-border-off3 {
   transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.21s linear;
 }
 
-.hbtn.hb-border-off3:hover, .hb-border-off3.hbtn-pill:hover, .hbtn-pill.hb-border-off3:hover {
+.hbtn.hb-border-off3:hover, .hbtn-pill.hb-border-off3:hover {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -1318,48 +1338,601 @@
   transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.21s linear;
 }
 
-.hbtn.hb-border-top, .hb-border-top.hbtn-pill, .hbtn-pill.hb-border-top {
+.hbtn.hb-border-top, .hbtn-pill.hb-border-top {
   transition: border-right-color 0.1s 0.14s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0s linear;
 }
 
-.hbtn.hb-border-top:hover, .hb-border-top.hbtn-pill:hover, .hbtn-pill.hb-border-top:hover {
+.hbtn.hb-border-top:hover, .hbtn-pill.hb-border-top:hover {
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
   transition: border-right-color 0.1s 0s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0.14s linear;
 }
 
-.hbtn.hb-border-right, .hb-border-right.hbtn-pill, .hbtn-pill.hb-border-right {
+.hbtn.hb-border-right, .hbtn-pill.hb-border-right {
   transition: border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0s linear;
 }
 
-.hbtn.hb-border-right:hover, .hb-border-right.hbtn-pill:hover, .hbtn-pill.hb-border-right:hover {
+.hbtn.hb-border-right:hover, .hbtn-pill.hb-border-right:hover {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
   transition: border-bottom-color 0.1s 0s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0.14s linear;
 }
 
-.hbtn.hb-border-bottom, .hb-border-bottom.hbtn-pill, .hbtn-pill.hb-border-bottom {
+.hbtn.hb-border-bottom, .hbtn-pill.hb-border-bottom {
   transition: border-left-color 0.1s 0.14s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0s linear;
 }
 
-.hbtn.hb-border-bottom:hover, .hb-border-bottom.hbtn-pill:hover, .hbtn-pill.hb-border-bottom:hover {
+.hbtn.hb-border-bottom:hover, .hbtn-pill.hb-border-bottom:hover {
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
   transition: border-left-color 0.1s 0s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0.14s linear;
 }
 
-.hbtn.hb-border-left, .hb-border-left.hbtn-pill, .hbtn-pill.hb-border-left {
+.hbtn.hb-border-left, .hbtn-pill.hb-border-left {
   transition: border-top-color 0.1s 0.14s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0s linear;
 }
 
-.hbtn.hb-border-left:hover, .hb-border-left.hbtn-pill:hover, .hbtn-pill.hb-border-left:hover {
+.hbtn.hb-border-left:hover, .hbtn-pill.hb-border-left:hover {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
   transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear;
+}
+
+.hbtn.hb-border-off2, .hbtn-pill.hb-border-off2 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-off2:hover, .hbtn-pill.hb-border-off2:hover {
+  border-color: transparent;
+}
+
+.hbtn.hb-border-off22, .hbtn-pill.hb-border-off22 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-off22:hover, .hbtn-pill.hb-border-off22:hover {
+  border-color: initial;
+}
+
+.hbtn.hb-border-off32, .hbtn-pill.hb-border-off32 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-off32:hover, .hbtn-pill.hb-border-off32:hover {
+  border-color: initial;
+}
+
+.hbtn.hb-border-top2, .hbtn-pill.hb-border-top2 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-top2:hover, .hbtn-pill.hb-border-top2:hover {
+  border-color: initial;
+}
+
+.hbtn.hb-border-right2, .hbtn-pill.hb-border-right2 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-right2:hover, .hbtn-pill.hb-border-right2:hover {
+  border-color: initial;
+}
+
+.hbtn.hb-border-bottom2, .hbtn-pill.hb-border-bottom2 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-bottom2:hover, .hbtn-pill.hb-border-bottom2:hover {
+  border-color: initial;
+}
+
+.hbtn.hb-border-left2, .hbtn-pill.hb-border-left2 {
+  border-color: #ffffff;
+  transition-duration: .3s;
+}
+
+.hbtn.hb-border-left2:hover, .hbtn-pill.hb-border-left2:hover {
+  border-color: initial;
+}
+
+.hbtn.hb-border-top2, .hbtn-pill.hb-border-top2 {
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-top2:hover, .hbtn-pill.hb-border-top2:hover {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-right2, .hbtn-pill.hb-border-right2 {
+  transition: all 0s 0s linear;
+}
+
+.hbtn.hb-border-right2:hover, .hbtn-pill.hb-border-right2:hover {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-bottom2, .hbtn-pill.hb-border-bottom2 {
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-bottom2:hover, .hbtn-pill.hb-border-bottom2:hover {
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-left2, .hbtn-pill.hb-border-left2 {
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-left2:hover, .hbtn-pill.hb-border-left2:hover {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn-pill.hb-border-off-br:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-off2-br:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-off3-br:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-top-br:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-right-br:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-bottom-br:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-left-br:after {
+  border-radius: 50px;
+}
+
+.hbtn.hb-border-off-br, .hbtn-pill.hb-border-off-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-off-br:after, .hbtn-pill.hb-border-off-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-off2-br, .hbtn-pill.hb-border-off2-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-off2-br:after, .hbtn-pill.hb-border-off2-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-off3-br, .hbtn-pill.hb-border-off3-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-off3-br:after, .hbtn-pill.hb-border-off3-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-top-br, .hbtn-pill.hb-border-top-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-top-br:after, .hbtn-pill.hb-border-top-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-right-br, .hbtn-pill.hb-border-right-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-right-br:after, .hbtn-pill.hb-border-right-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-bottom-br, .hbtn-pill.hb-border-bottom-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-bottom-br:after, .hbtn-pill.hb-border-bottom-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-left-br, .hbtn-pill.hb-border-left-br {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-left-br:after, .hbtn-pill.hb-border-left-br:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-top-br:after, .hbtn-pill.hb-border-top-br:after {
+  transition: border-right-color 0.1s 0.14s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0s linear, border-top-width 0.1s 0s linear;
+}
+
+.hbtn.hb-border-top-br:hover:after, .hbtn-pill.hb-border-top-br:hover:after {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-width: calc(3px * 2);
+  transition: border-right-color 0.1s 0s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0.14s linear, border-top-width 0.1s 0.14s linear;
+}
+
+.hbtn.hb-border-right-br:after, .hbtn-pill.hb-border-right-br:after {
+  transition: border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0s linear, border-right-width 0.1s 0s linear;
+}
+
+.hbtn.hb-border-right-br:hover:after, .hbtn-pill.hb-border-right-br:hover:after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-width: calc(3px * 2);
+  transition: border-bottom-color 0.1s 0s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0.14s linear, border-right-width 0.1s 0.14s linear;
+}
+
+.hbtn.hb-border-bottom-br:after, .hbtn-pill.hb-border-bottom-br:after {
+  transition: border-left-color 0.1s 0.14s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0s linear, border-bottom-width 0.1s 0.14s linear;
+}
+
+.hbtn.hb-border-bottom-br:hover:after, .hbtn-pill.hb-border-bottom-br:hover:after {
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-width: calc(3px * 2);
+  transition: border-left-color 0.1s 0s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0.14s linear, border-bottom-width 0.1s 0.14s linear;
+}
+
+.hbtn.hb-border-left-br:after, .hbtn-pill.hb-border-left-br:after {
+  transition: border-top-color 0.1s 0.14s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0s linear, border-left-width 0.1s 0s linear;
+}
+
+.hbtn.hb-border-left-br:hover:after, .hbtn-pill.hb-border-left-br:hover:after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-width: calc(3px * 2);
+  transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-width 0.1s 0.14s linear;
+}
+
+.hbtn-pill.hb-border-off-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-off2-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-off3-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-top-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-right-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-bottom-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn-pill.hb-border-left-br2:after {
+  border-radius: 50px;
+}
+
+.hbtn.hb-border-off-br2, .hbtn-pill.hb-border-off-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-off-br2:after, .hbtn-pill.hb-border-off-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-off2-br2, .hbtn-pill.hb-border-off2-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-off2-br2:after, .hbtn-pill.hb-border-off2-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-off3-br2, .hbtn-pill.hb-border-off3-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-off3-br2:after, .hbtn-pill.hb-border-off3-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-top-br2, .hbtn-pill.hb-border-top-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-top-br2:after, .hbtn-pill.hb-border-top-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-right-br2, .hbtn-pill.hb-border-right-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-right-br2:after, .hbtn-pill.hb-border-right-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-bottom-br2, .hbtn-pill.hb-border-bottom-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-bottom-br2:after, .hbtn-pill.hb-border-bottom-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-left-br2, .hbtn-pill.hb-border-left-br2 {
+  position: relative;
+  transition-duration: .3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: calc(8px + 2px) calc(20px + 2px);
+}
+
+.hbtn.hb-border-left-br2:after, .hbtn-pill.hb-border-left-br2:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: solid 3px #ffffff;
+  z-index: 2;
+}
+
+.hbtn.hb-border-top-br2:after, .hbtn-pill.hb-border-top-br2:after {
+  transition: all 0.1s 0.07s linear;
+}
+
+.hbtn.hb-border-top-br2:hover:after, .hbtn-pill.hb-border-top-br2:hover:after {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-width: calc(3px * 2);
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-right-br2:after, .hbtn-pill.hb-border-right-br2:after {
+  transition: all 0.1s 0.07s linear;
+}
+
+.hbtn.hb-border-right-br2:hover:after, .hbtn-pill.hb-border-right-br2:hover:after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-width: calc(3px * 2);
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-bottom-br2:after, .hbtn-pill.hb-border-bottom-br2:after {
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-bottom-br2:hover:after, .hbtn-pill.hb-border-bottom-br2:hover:after {
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-width: calc(3px * 2);
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-left-br2:after, .hbtn-pill.hb-border-left-br2:after {
+  transition: all 0.1s 0s linear;
+}
+
+.hbtn.hb-border-left-br2:hover:after, .hbtn-pill.hb-border-left-br2:hover:after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-width: calc(3px * 2);
+  transition: all 0.1s 0s linear;
 }
 
 * {

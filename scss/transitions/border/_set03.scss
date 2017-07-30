@@ -1,0 +1,124 @@
+//===================================
+// Border Transitions - Set 03
+//===================================
+
+
+// Loop adding properties to classes
+
+.hbtn-pill {
+  @each $type in $borderproperties {
+    &.hb-border#{nth($type, 1)} {
+      &-br {
+        &:after {
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+
+.hbtn, .hbtn-pill {
+  @each $type in $borderproperties {
+    &.hb-border#{nth($type, 1)} {
+      &-br {
+        position: relative;
+        transition-duration: .3s;
+        overflow: visible;
+        box-sizing: border-box;
+        border: none;
+        padding: calc(#{$paddingY} + 2px) calc(#{$paddingX} + 2px);
+        &:after {
+          box-sizing: border-box;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          content: '';
+          border: solid $btnborder nth($type, 2);
+          z-index: 2;
+        }
+      }
+    }
+  }
+  &.hb-border-top-br {
+    &:after {
+      transition: border-right-color 0.1s 0.14s linear,
+      border-bottom-color 0.1s 0.07s linear,
+      border-left-color 0.1s 0s linear,
+      border-top-width 0.1s 0s linear;
+    }
+    &:hover {
+      &:after {
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-top-width: calc(#{$btnborder} * 2);
+        transition: border-right-color 0.1s 0s linear,
+        border-bottom-color 0.1s 0.07s linear,
+        border-left-color 0.1s 0.14s linear,
+        border-top-width 0.1s 0.14s linear;
+      }
+    }
+  }
+  &.hb-border-right-br {
+    &:after {
+      transition: border-bottom-color 0.1s 0.14s linear,
+      border-left-color 0.1s 0.07s linear,
+      border-top-color 0.1s 0s linear,
+      border-right-width 0.1s 0s linear;
+    }
+    &:hover {
+      &:after {
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        border-right-width: calc(#{$btnborder} * 2);
+        transition: border-bottom-color 0.1s 0s linear,
+        border-left-color 0.1s 0.07s linear,
+        border-top-color 0.1s 0.14s linear,
+        border-right-width 0.1s 0.14s linear;
+      }
+    }
+  }
+  &.hb-border-bottom-br {
+    &:after {
+      transition: border-left-color 0.1s 0.14s linear,
+      border-top-color 0.1s 0.07s linear,
+      border-right-color 0.1s 0s linear,
+      border-bottom-width 0.1s 0.14s linear;
+    }
+    &:hover {
+      &:after {
+        border-left-color: transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-width: calc(#{$btnborder} * 2);
+        transition: border-left-color 0.1s 0s linear,
+        border-top-color 0.1s 0.07s linear,
+        border-right-color 0.1s 0.14s linear,
+        border-bottom-width 0.1s 0.14s linear;
+      }
+    }
+  }
+  &.hb-border-left-br {
+    &:after {
+      transition: border-top-color 0.1s 0.14s linear,
+      border-right-color 0.1s 0.07s linear,
+      border-bottom-color 0.1s 0s linear,
+      border-left-width 0.1s 0s linear;
+    }
+    &:hover {
+      &:after {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-width: calc(#{$btnborder} * 2);
+        transition: border-top-color 0.1s 0s linear,
+        border-right-color 0.1s 0.07s linear,
+        border-bottom-color 0.1s 0.14s linear,
+        border-left-width 0.1s 0.14s linear;
+      }
+    }
+  }
+}

@@ -8,7 +8,8 @@ $(function () {
         var outer = $(this).prop('outerHTML');
         console.log(outer);
         klon = $(this).clone().css('margin-right', '20px');
-        $('.class-helper').show().css('display', 'flex').empty().text(outer).prepend(klon);
+        $('.class-helper').show().css('display', 'flex').empty().prepend('<pre></pre>').prepend(klon);
+        $('.class-helper pre').text(outer);
     });
 });
 
