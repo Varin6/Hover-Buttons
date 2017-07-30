@@ -1,0 +1,23 @@
+//===================================
+// Fill Transitions Variables/Arrays
+//===================================
+
+
+// properties array: [suffix], [:before top], [:before right], [:before bottom], [:before left], [:before width], [:before height], [:before opacity], [:hover:before width], [:hover:before height], [:hover:before opacity]
+$fillproperties:(
+
+  //group 1
+        "-on" 0  auto auto 0 100% 100% 0 100% 100% 1,
+        "-top" 0 auto auto 0 100% 0 1 100% 100% 1,
+        "-right" 0 0 auto auto 0 100% 1 100% 100% 1,
+        "-bottom" auto auto 0 0 100% 0 1 100% 100% 1,
+        "-left" 0 auto auto 0 0 100% 1 100% 100% 1,
+
+          //group 2
+        "-on-rev" 0 auto auto 0 100% 100% 1 100% 100% 0,
+        "-top-rev" 0 auto auto 0 100% 100% 1 100% 0 1,
+        "-right-rev" 0 0 auto auto 100% 100% 1 0 100% 1,
+        "-bottom-rev" auto auto 0 0 100% 100% 1 100% 0 1,
+        "-left-rev" 0 auto auto 0 100% 100% 1 0 100% 1,
+);
+

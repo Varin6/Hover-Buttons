@@ -1,0 +1,67 @@
+@import "fill";
+
+.hbtn, .hbtn-pill {
+  @each $type in $fillproperties {
+    &.hb-fill#{nth($type, 1)} {
+      &-br {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          background: $btncolor;
+          transition-duration: .3s;
+          z-index: -1;
+          top: nth($type, 2);
+          right: nth($type, 3);
+          bottom: nth($type, 4);
+          left: nth($type, 5);
+          width: nth($type, 6);
+          height: nth($type, 7);
+          opacity: nth($type, 8);
+          border: solid $btnborder $btncolor;
+        }
+        &:hover {
+          &:before {
+            width: nth($type, 9);
+            height: nth($type, 10);
+            opacity: nth($type, 11);
+          }
+        }
+      }
+    }
+  }
+}
+
+.hb-fill {
+  &-top, &-right, &-bottom, &-left, &-on {
+    &-br {
+      background: transparent;
+      color: $txtcolor;
+      transition: color 0.3s ease,
+      background 0s ease;
+      &:hover {
+        color: $txtcolorfill;
+        background: $btncolor;
+        transition: color 0.3s ease,
+        background 0s 0.3s ease;
+      }
+    }
+  }
+}
+
+.hb-fill {
+  &-top-rev, &-right-rev, &-bottom-rev, &-left-rev, &-on-rev {
+    &-br {
+      background: $btncolor;
+      color: $txtcolorfill;
+      transition: color 0.3s ease,
+      background 0s 0.3s ease;
+      &:hover {
+        background: transparent;
+        color: $txtcolor;
+        transition: color 0.3s ease,
+        background 0s ease;
+      }
+    }
+  }
+}

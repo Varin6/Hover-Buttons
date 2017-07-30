@@ -1,3 +1,30 @@
+//===================================
+// Variables
+//===================================
+
 @import 'variables';
+
+//===================================
+// Base style of the buttons
+//===================================
+
 @import 'base';
-@import 'transitions/fill';
+
+//===================================
+// Fill Transitions
+//===================================
+
+
+@import 'transitions/fill/fill';  // Core fill transition styles (DON'T REMOVE)
+
+@import 'transitions/fill/set01'; // Fill Transitions Set 01 (option)
+@import 'transitions/fill/set02'; // Fill Transitions Set 02 (option)
+@import 'transitions/fill/set03'; // Fill Transitions Set 03 (option)
+@import 'transitions/fill/set04'; // Fill Transitions Set 04 (option)
+
+
+//===================================
+// Border Transitions
+//===================================
+
+@import 'transitions/border/border';

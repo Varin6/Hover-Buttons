@@ -75,9 +75,9 @@ h5 {
   -ms-flex-align: start;
       -webkit-align-items: flex-start;
           align-items: flex-start;
-  -ms-flex-wrap: nowrap;
-          -webkit-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   font-family: "Lato", sans-serif;
   margin-bottom: 250px;

@@ -1,3 +1,7 @@
+//===================================
+// Base Buttons Style
+//===================================
+
 .hbtn {
   display: inline-block;
   overflow: hidden;
@@ -9,9 +13,9 @@
   color: $btncolor;
   white-space: nowrap;
   z-index: 0;
-  &-pill {
-    @extend .hbtn;
-    border-radius: 50px;
-  }
 }
 
+.hbtn-pill {
+  @extend .hbtn;
+  border-radius: 50px;
+}

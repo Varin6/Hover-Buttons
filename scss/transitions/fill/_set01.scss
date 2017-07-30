@@ -1,31 +1,7 @@
-//===================================
-// Fill Transitions
-//===================================
-
-
-// properties array: [suffix], [:before top], [:before right], [:before bottom], [:before left], [:before width], [:before height], [:before opacity], [:hover:before width], [:hover:before height], [:hover:before opacity]
-$properties:(
-
-  //group 1
-  "-on" 0  auto auto 0 100% 100% 0 100% 100% 1,
-  "-top" 0 auto auto 0 100% 0 1 100% 100% 1,
-  "-right" 0 0 auto auto 0 100% 1 100% 100% 1,
-  "-bottom" auto auto 0 0 100% 0 1 100% 100% 1,
-  "-left" 0 auto auto 0 0 100% 1 100% 100% 1,
-
-  //group 2
-  "-on-rev" 0 auto auto 0 100% 100% 1 100% 100% 0,
-  "-top-rev" 0 auto auto 0 100% 100% 1 100% 0 1,
-  "-right-rev" 0 0 auto auto 100% 100% 1 0 100% 1,
-  "-bottom-rev" auto auto 0 0 100% 100% 1 100% 0 1,
-  "-left-rev" 0 auto auto 0 100% 100% 1 0 100% 1,
-);
-
-
-// Loop adding properties to classes
+@import "fill";
 
 .hbtn, .hbtn-pill {
-  @each $type in $properties {
+  @each $type in $fillproperties {
     &.hb-fill#{nth($type, 1)} {
       position: relative;
       &:before {
@@ -52,8 +28,6 @@ $properties:(
     }
   }
 }
-
-// Set 1 Transition - background opacity transition not visible
 
 .hb-fill {
   &-top, &-right, &-bottom, &-left, &-on {
@@ -84,22 +58,3 @@ $properties:(
     }
   }
 }
-
-// Set 2 Transition - background opacity transition visible
-
-
-.hb-bg{
-  transition: all 0.3s ease;
-  &:hover {
-    transition: all 0.3s ease;
-  }
-}
-
-// Set 3 and 4 Transition - thicker border
-
-.hb-br {
-  &:before {
-    border: solid $btnborder $btncolor;
-  }
-}
-
