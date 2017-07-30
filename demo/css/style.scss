@@ -8,13 +8,16 @@ html, body {
 	padding:0;
 }
 
+body {
+	background: #1e1e1e;
+}
+
 * {
 	box-sizing: border-box;
 	outline: none;
 }
 
-body {
-	background: #1e1e1e;
+.body-wrap {
 	color: #ffffff;
 	display: flex;
 	justify-content: center;

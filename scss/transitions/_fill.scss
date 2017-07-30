@@ -2,23 +2,67 @@
 // Fill Transitions
 //===================================
 
+
+// properties array: [suffix], [:before top], [:before right], [:before bottom], [:before left], [:before width], [:before height], [:before opacity], [:hover:before width], [:hover:before height], [:hover:before opacity]
+$properties:(
+
+  //group 1
+  "-on" 0  auto auto 0 100% 100% 0 100% 100% 1,
+  "-top" 0 auto auto 0 100% 0 1 100% 100% 1,
+  "-right" 0 0 auto auto 0 100% 1 100% 100% 1,
+  "-bottom" auto auto 0 0 100% 0 1 100% 100% 1,
+  "-left" 0 auto auto 0 0 100% 1 100% 100% 1,
+
+  //group 2
+  "-on-rev" 0 auto auto 0 100% 100% 1 100% 100% 0,
+  "-top-rev" 0 auto auto 0 100% 100% 1 100% 0 1,
+  "-right-rev" 0 0 auto auto 100% 100% 1 0 100% 1,
+  "-bottom-rev" auto auto 0 0 100% 100% 1 100% 0 1,
+  "-left-rev" 0 auto auto 0 100% 100% 1 0 100% 1,
+);
+
+
+
+// Loop adding properties to classes
+
+.anibtn, anibtn-pill {
+  @each $type in $properties {
+    &.tr-fill#{nth($type, 1)} {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $btncolor;
+        transition-duration: .3s;
+        z-index: -1;
+        top: nth($type, 2);
+        right: nth($type, 3);
+        bottom: nth($type, 4);
+        left: nth($type, 5);
+        width: nth($type, 6);
+        height: nth($type, 7);
+        opacity: nth($type, 8);
+      }
+      &:hover {
+        &:before {
+          width: nth($type, 9);
+          height: nth($type, 10);
+          opacity: nth($type, 11);
+        }
+      }
+    }
+  }
+}
+
 .tr-fill-top,
 .tr-fill-right,
 .tr-fill-bottom,
 .tr-fill-left,
 .tr-fill-on {
-  position: relative;
-  //transition-duration: .5s;
+  background: transparent;
+  color: $txtcolor;
   transition: color 0.3s ease,
               background 0s ease;
-  background: transparent;
-  &:before {
-    position: absolute;
-    content: '';
-    background: $btncolor;
-    transition-duration: .3s;
-    z-index: -1;
-  }
   &:hover {
     color: $txtcolorfill;
     background: $btncolor;
@@ -27,23 +71,15 @@
   }
 }
 
-.tr-fill2-top,
-.tr-fill2-right,
-.tr-fill2-bottom,
-.tr-fill2-left,
-.tr-fill2-on{
+.tr-fill-top-rev,
+.tr-fill-right-rev,
+.tr-fill-bottom-rev,
+.tr-fill-left-rev,
+.tr-fill-on-rev{
   background: $btncolor;
   color: $txtcolorfill;
-  position: relative;
   transition: color 0.3s ease,
               background 0s 0.3s ease;
-  &:before {
-    position: absolute;
-    content: '';
-    background: $btncolor;
-    transition-duration: .3s;
-    z-index: -1;
-  }
   &:hover {
     background: transparent;
     color: $txtcolor;
@@ -52,146 +88,3 @@
   }
 }
 
-.tr-fill-top {
-   &:before {
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 0;
-   }
-   &:hover {
-     &:before {
-       height: 100%;
-     }
-   }
- }
-
-.tr-fill-right {
-  &:before {
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-  }
-  &:hover {
-    &:before {
-      width: 100%;
-    }
-  }
-}
-
-.tr-fill-bottom {
-  &:before {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-  }
-  &:hover {
-    &:before {
-      height: 100%;
-    }
-  }
-}
-
-.tr-fill-left {
-  &:before {
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-  }
-  &:hover {
-    &:before {
-      width: 100%;
-    }
-  }
-}
-
-.tr-fill-on {
-  &:before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity:0;
-  }
-  &:hover {
-    &:before {
-      opacity:1;
-    }
-  }
-}
-
-//========= Fill -> Empty
-
-.tr-fill2-top {
-  &:before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  &:hover {
-    &:before {
-      height: 0;
-    }
-  }
-}
-
-.tr-fill2-right {
-  &:before {
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  &:hover {
-    &:before {
-      width: 0;
-    }
-  }
-}
-
-.tr-fill2-bottom {
-  &:before {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
-  &:hover {
-    &:before {
-      height: 0;
-    }
-  }
-}
-
-.tr-fill2-left {
-  &:before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  &:hover {
-    &:before {
-      width: 0;
-    }
-  }
-}
-
-.tr-fill2-on {
-  &:before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity:1;
-  }
-  &:hover {
-    &:before {
-      opacity:0;
-    }
-  }
-}
