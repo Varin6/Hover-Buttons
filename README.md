@@ -1,2 +1,2 @@
-# Ani-Buttons
-Animated CSS/SCSS Buttons
+# Hover-Buttons
+Hover Transition CSS/SCSS Buttons
