@@ -1,15 +1,17 @@
-.anibtn {
+.hbtn {
   display: inline-block;
   overflow: hidden;
   padding: 8px 20px;
   margin: 0 3px 6px 3px;
   text-align: center;
-  border: solid 2px $btncolor;
+  border: solid $btnborder $btncolor;
   text-decoration: none;
   color: $btncolor;
   white-space: nowrap;
+  z-index: 0;
   &-pill {
-    @extend .anibtn;
+    @extend .hbtn;
     border-radius: 50px;
   }
 }
+

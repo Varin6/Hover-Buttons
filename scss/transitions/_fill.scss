@@ -24,9 +24,9 @@ $properties:(
 
 // Loop adding properties to classes
 
-.anibtn, .anibtn-pill {
+.hbtn, .hbtn-pill {
   @each $type in $properties {
-    &.tr-fill#{nth($type, 1)} {
+    &.hb-fill#{nth($type, 1)} {
       position: relative;
       &:before {
         position: absolute;
@@ -53,37 +53,53 @@ $properties:(
   }
 }
 
-.tr-fill-top,
-.tr-fill-right,
-.tr-fill-bottom,
-.tr-fill-left,
-.tr-fill-on {
-  background: transparent;
-  color: $txtcolor;
-  transition: color 0.3s ease,
-              background 0s ease;
-  &:hover {
-    color: $txtcolorfill;
-    background: $btncolor;
-    transition: color 0.3s ease,
-                background 0s 0.3s ease;
-  }
-}
+// Set 1 Transition - background opacity transition not visible
 
-.tr-fill-top-rev,
-.tr-fill-right-rev,
-.tr-fill-bottom-rev,
-.tr-fill-left-rev,
-.tr-fill-on-rev{
-  background: $btncolor;
-  color: $txtcolorfill;
-  transition: color 0.3s ease,
-              background 0s 0.3s ease;
-  &:hover {
+.hb-fill {
+  &-top, &-right, &-bottom, &-left, &-on {
     background: transparent;
     color: $txtcolor;
     transition: color 0.3s ease,
-                background 0s ease;
+    background 0s ease;
+    &:hover {
+      color: $txtcolorfill;
+      background: $btncolor;
+      transition: color 0.3s ease,
+      background 0s 0.3s ease;
+    }
+  }
+}
+
+.hb-fill {
+  &-top-rev, &-right-rev, &-bottom-rev, &-left-rev, &-on-rev {
+    background: $btncolor;
+    color: $txtcolorfill;
+    transition: color 0.3s ease,
+    background 0s 0.3s ease;
+    &:hover {
+      background: transparent;
+      color: $txtcolor;
+      transition: color 0.3s ease,
+      background 0s ease;
+    }
+  }
+}
+
+// Set 2 Transition - background opacity transition visible
+
+
+.hb-bg{
+  transition: all 0.3s ease;
+  &:hover {
+    transition: all 0.3s ease;
+  }
+}
+
+// Set 3 and 4 Transition - thicker border
+
+.hb-br {
+  &:before {
+    border: solid $btnborder $btncolor;
   }
 }
 

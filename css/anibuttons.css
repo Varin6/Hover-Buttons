@@ -1,4 +1,4 @@
-.anibtn, .anibtn-pill {
+.hbtn, .hbtn-pill {
   display: inline-block;
   overflow: hidden;
   padding: 8px 20px;
@@ -8,17 +8,18 @@
   text-decoration: none;
   color: #ffffff;
   white-space: nowrap;
+  z-index: 0;
 }
 
-.anibtn-pill {
+.hbtn-pill {
   border-radius: 50px;
 }
 
-.anibtn.tr-fill-on, .tr-fill-on.anibtn-pill, .anibtn-pill.tr-fill-on {
+.hbtn.hb-fill-on, .hb-fill-on.hbtn-pill, .hbtn-pill.hb-fill-on {
   position: relative;
 }
 
-.anibtn.tr-fill-on:before, .tr-fill-on.anibtn-pill:before, .anibtn-pill.tr-fill-on:before {
+.hbtn.hb-fill-on:before, .hb-fill-on.hbtn-pill:before, .hbtn-pill.hb-fill-on:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -33,17 +34,17 @@
   opacity: 0;
 }
 
-.anibtn.tr-fill-on:hover:before, .tr-fill-on.anibtn-pill:hover:before, .anibtn-pill.tr-fill-on:hover:before {
+.hbtn.hb-fill-on:hover:before, .hb-fill-on.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.anibtn.tr-fill-top, .tr-fill-top.anibtn-pill, .anibtn-pill.tr-fill-top {
+.hbtn.hb-fill-top, .hb-fill-top.hbtn-pill, .hbtn-pill.hb-fill-top {
   position: relative;
 }
 
-.anibtn.tr-fill-top:before, .tr-fill-top.anibtn-pill:before, .anibtn-pill.tr-fill-top:before {
+.hbtn.hb-fill-top:before, .hb-fill-top.hbtn-pill:before, .hbtn-pill.hb-fill-top:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -58,17 +59,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-top:hover:before, .tr-fill-top.anibtn-pill:hover:before, .anibtn-pill.tr-fill-top:hover:before {
+.hbtn.hb-fill-top:hover:before, .hb-fill-top.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.anibtn.tr-fill-right, .tr-fill-right.anibtn-pill, .anibtn-pill.tr-fill-right {
+.hbtn.hb-fill-right, .hb-fill-right.hbtn-pill, .hbtn-pill.hb-fill-right {
   position: relative;
 }
 
-.anibtn.tr-fill-right:before, .tr-fill-right.anibtn-pill:before, .anibtn-pill.tr-fill-right:before {
+.hbtn.hb-fill-right:before, .hb-fill-right.hbtn-pill:before, .hbtn-pill.hb-fill-right:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -83,17 +84,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-right:hover:before, .tr-fill-right.anibtn-pill:hover:before, .anibtn-pill.tr-fill-right:hover:before {
+.hbtn.hb-fill-right:hover:before, .hb-fill-right.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.anibtn.tr-fill-bottom, .tr-fill-bottom.anibtn-pill, .anibtn-pill.tr-fill-bottom {
+.hbtn.hb-fill-bottom, .hb-fill-bottom.hbtn-pill, .hbtn-pill.hb-fill-bottom {
   position: relative;
 }
 
-.anibtn.tr-fill-bottom:before, .tr-fill-bottom.anibtn-pill:before, .anibtn-pill.tr-fill-bottom:before {
+.hbtn.hb-fill-bottom:before, .hb-fill-bottom.hbtn-pill:before, .hbtn-pill.hb-fill-bottom:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -108,17 +109,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-bottom:hover:before, .tr-fill-bottom.anibtn-pill:hover:before, .anibtn-pill.tr-fill-bottom:hover:before {
+.hbtn.hb-fill-bottom:hover:before, .hb-fill-bottom.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.anibtn.tr-fill-left, .tr-fill-left.anibtn-pill, .anibtn-pill.tr-fill-left {
+.hbtn.hb-fill-left, .hb-fill-left.hbtn-pill, .hbtn-pill.hb-fill-left {
   position: relative;
 }
 
-.anibtn.tr-fill-left:before, .tr-fill-left.anibtn-pill:before, .anibtn-pill.tr-fill-left:before {
+.hbtn.hb-fill-left:before, .hb-fill-left.hbtn-pill:before, .hbtn-pill.hb-fill-left:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -133,17 +134,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-left:hover:before, .tr-fill-left.anibtn-pill:hover:before, .anibtn-pill.tr-fill-left:hover:before {
+.hbtn.hb-fill-left:hover:before, .hb-fill-left.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
 
-.anibtn.tr-fill-on-rev, .tr-fill-on-rev.anibtn-pill, .anibtn-pill.tr-fill-on-rev {
+.hbtn.hb-fill-on-rev, .hb-fill-on-rev.hbtn-pill, .hbtn-pill.hb-fill-on-rev {
   position: relative;
 }
 
-.anibtn.tr-fill-on-rev:before, .tr-fill-on-rev.anibtn-pill:before, .anibtn-pill.tr-fill-on-rev:before {
+.hbtn.hb-fill-on-rev:before, .hb-fill-on-rev.hbtn-pill:before, .hbtn-pill.hb-fill-on-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -158,17 +159,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-on-rev:hover:before, .tr-fill-on-rev.anibtn-pill:hover:before, .anibtn-pill.tr-fill-on-rev:hover:before {
+.hbtn.hb-fill-on-rev:hover:before, .hb-fill-on-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-on-rev:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.anibtn.tr-fill-top-rev, .tr-fill-top-rev.anibtn-pill, .anibtn-pill.tr-fill-top-rev {
+.hbtn.hb-fill-top-rev, .hb-fill-top-rev.hbtn-pill, .hbtn-pill.hb-fill-top-rev {
   position: relative;
 }
 
-.anibtn.tr-fill-top-rev:before, .tr-fill-top-rev.anibtn-pill:before, .anibtn-pill.tr-fill-top-rev:before {
+.hbtn.hb-fill-top-rev:before, .hb-fill-top-rev.hbtn-pill:before, .hbtn-pill.hb-fill-top-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -183,17 +184,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-top-rev:hover:before, .tr-fill-top-rev.anibtn-pill:hover:before, .anibtn-pill.tr-fill-top-rev:hover:before {
+.hbtn.hb-fill-top-rev:hover:before, .hb-fill-top-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-top-rev:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.anibtn.tr-fill-right-rev, .tr-fill-right-rev.anibtn-pill, .anibtn-pill.tr-fill-right-rev {
+.hbtn.hb-fill-right-rev, .hb-fill-right-rev.hbtn-pill, .hbtn-pill.hb-fill-right-rev {
   position: relative;
 }
 
-.anibtn.tr-fill-right-rev:before, .tr-fill-right-rev.anibtn-pill:before, .anibtn-pill.tr-fill-right-rev:before {
+.hbtn.hb-fill-right-rev:before, .hb-fill-right-rev.hbtn-pill:before, .hbtn-pill.hb-fill-right-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -208,17 +209,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-right-rev:hover:before, .tr-fill-right-rev.anibtn-pill:hover:before, .anibtn-pill.tr-fill-right-rev:hover:before {
+.hbtn.hb-fill-right-rev:hover:before, .hb-fill-right-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-right-rev:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
 }
 
-.anibtn.tr-fill-bottom-rev, .tr-fill-bottom-rev.anibtn-pill, .anibtn-pill.tr-fill-bottom-rev {
+.hbtn.hb-fill-bottom-rev, .hb-fill-bottom-rev.hbtn-pill, .hbtn-pill.hb-fill-bottom-rev {
   position: relative;
 }
 
-.anibtn.tr-fill-bottom-rev:before, .tr-fill-bottom-rev.anibtn-pill:before, .anibtn-pill.tr-fill-bottom-rev:before {
+.hbtn.hb-fill-bottom-rev:before, .hb-fill-bottom-rev.hbtn-pill:before, .hbtn-pill.hb-fill-bottom-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -233,17 +234,17 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-bottom-rev:hover:before, .tr-fill-bottom-rev.anibtn-pill:hover:before, .anibtn-pill.tr-fill-bottom-rev:hover:before {
+.hbtn.hb-fill-bottom-rev:hover:before, .hb-fill-bottom-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-bottom-rev:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
 }
 
-.anibtn.tr-fill-left-rev, .tr-fill-left-rev.anibtn-pill, .anibtn-pill.tr-fill-left-rev {
+.hbtn.hb-fill-left-rev, .hb-fill-left-rev.hbtn-pill, .hbtn-pill.hb-fill-left-rev {
   position: relative;
 }
 
-.anibtn.tr-fill-left-rev:before, .tr-fill-left-rev.anibtn-pill:before, .anibtn-pill.tr-fill-left-rev:before {
+.hbtn.hb-fill-left-rev:before, .hb-fill-left-rev.hbtn-pill:before, .hbtn-pill.hb-fill-left-rev:before {
   position: absolute;
   content: '';
   background: #ffffff;
@@ -258,48 +259,44 @@
   opacity: 1;
 }
 
-.anibtn.tr-fill-left-rev:hover:before, .tr-fill-left-rev.anibtn-pill:hover:before, .anibtn-pill.tr-fill-left-rev:hover:before {
+.hbtn.hb-fill-left-rev:hover:before, .hb-fill-left-rev.hbtn-pill:hover:before, .hbtn-pill.hb-fill-left-rev:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
 }
 
-.tr-fill-top,
-.tr-fill-right,
-.tr-fill-bottom,
-.tr-fill-left,
-.tr-fill-on {
+.hb-fill-top, .hb-fill-right, .hb-fill-bottom, .hb-fill-left, .hb-fill-on {
   background: transparent;
   color: #ffffff;
   transition: color 0.3s ease, background 0s ease;
 }
 
-.tr-fill-top:hover,
-.tr-fill-right:hover,
-.tr-fill-bottom:hover,
-.tr-fill-left:hover,
-.tr-fill-on:hover {
+.hb-fill-top:hover, .hb-fill-right:hover, .hb-fill-bottom:hover, .hb-fill-left:hover, .hb-fill-on:hover {
   color: #000000;
   background: #ffffff;
   transition: color 0.3s ease, background 0s 0.3s ease;
 }
 
-.tr-fill-top-rev,
-.tr-fill-right-rev,
-.tr-fill-bottom-rev,
-.tr-fill-left-rev,
-.tr-fill-on-rev {
+.hb-fill-top-rev, .hb-fill-right-rev, .hb-fill-bottom-rev, .hb-fill-left-rev, .hb-fill-on-rev {
   background: #ffffff;
   color: #000000;
   transition: color 0.3s ease, background 0s 0.3s ease;
 }
 
-.tr-fill-top-rev:hover,
-.tr-fill-right-rev:hover,
-.tr-fill-bottom-rev:hover,
-.tr-fill-left-rev:hover,
-.tr-fill-on-rev:hover {
+.hb-fill-top-rev:hover, .hb-fill-right-rev:hover, .hb-fill-bottom-rev:hover, .hb-fill-left-rev:hover, .hb-fill-on-rev:hover {
   background: transparent;
   color: #ffffff;
   transition: color 0.3s ease, background 0s ease;
+}
+
+.hb-bg {
+  transition: all 0.3s ease;
+}
+
+.hb-bg:hover {
+  transition: all 0.3s ease;
+}
+
+.hb-br:before {
+  border: solid 2px #ffffff;
 }

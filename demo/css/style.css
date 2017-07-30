@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,9 +12,55 @@ body {
   background: #1e1e1e;
 }
 
-* {
-  box-sizing: border-box;
-  outline: none;
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+h5 {
+  font-size: 1.4rem;
+  -ms-flex-item-align: start;
+          -webkit-align-self: flex-start;
+      align-self: flex-start;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.lead {
+  font-family: "Bellefair", serif;
+}
+
+.class-helper {
+  background: #1e1e1e;
+  border-top: 2px solid #ebebeb;
+  padding: 30px;
+  color: #ffffff;
+  -ms-flex-pack: center;
+      -webkit-justify-content: center;
+          justify-content: center;
+  -ms-flex-align: center;
+      -webkit-align-items: center;
+          align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  display: none;
 }
 
 .body-wrap {
@@ -24,34 +75,41 @@ body {
   -ms-flex-align: start;
       -webkit-align-items: flex-start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-          -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 60px;
+  -ms-flex-wrap: nowrap;
+          -webkit-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
   font-family: "Lato", sans-serif;
+  margin-bottom: 250px;
 }
 
-h3 {
-  font-size: 3rem;
-}
-
-h4 {
-  font-size: 1.6rem;
-  margin-bottom: 40px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-  font-family: "Bellefair", serif;
-  font-weight: 400;
+.body-wrap__left, .body-wrap__right {
+  width: 50%;
+  padding: 0;
 }
 
 .container {
-  width: 50%;
-  height: 300px;
-  text-align: center;
+  padding: 20px 15px;
+  width: 100%;
+  text-align: left;
+}
+
+.container.bg-color {
+  background: #1e1e1e !important;
 }
 
 .container h3 {
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .body-wrap {
+    -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .body-wrap__left, .body-wrap__right {
+    width: 100%;
+    padding: 15px;
+  }
 }
