@@ -24,7 +24,7 @@ $properties:(
 
 // Loop adding properties to classes
 
-.anibtn, anibtn-pill {
+.anibtn, .anibtn-pill {
   @each $type in $properties {
     &.tr-fill#{nth($type, 1)} {
       position: relative;
