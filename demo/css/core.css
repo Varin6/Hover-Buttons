@@ -1984,10 +1984,13 @@ h5 {
   max-height: 200px;
   display: none;
   transition-duration: .3s;
+  -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .body-wrap {
-  padding: 50px 30px;
+  padding: 30px 30px;
   color: #ffffff;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -2039,10 +2042,50 @@ h5 {
   padding-right: 8px;
 }
 
+.buttons-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+      -webkit-align-items: center;
+          align-items: center;
+  -ms-flex-pack: center;
+      -webkit-justify-content: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0 50px 0;
+}
+
+.buttons-wrapper iframe {
+  margin: 0 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.hsmall {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.hsmall:after {
+  padding: 3px 8px;
+}
+
 @media only screen and (max-width: 768px) {
   .body-wrap {
     -ms-flex-wrap: wrap;
             -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
+  }
+  .class-helper {
+    font-size: 1.2rem;
+  }
+  .class-helper pre {
+    white-space: pre-wrap;
+    text-align: center;
   }
 }

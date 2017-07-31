@@ -57,11 +57,12 @@ h5 {
 	max-height:200px;
 	display: none;
 	transition-duration: .3s;
+	flex-wrap: wrap;
 }
 
 
 .body-wrap {
-	padding: 50px 30px;
+	padding: 30px 30px;
 	color: #ffffff;
 	display: flex;
 	justify-content: center;
@@ -101,12 +102,45 @@ h5 {
 	}
 }
 
+.buttons-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 20px 0 50px 0;
+	iframe {
+		margin: 0 10px !important;
+		margin-bottom: 10px !important;
+	}
+}
+
+.hsmall {
+	font-size: 12px;
+	padding: 4px 10px;
+	&:after {
+		padding: 3px 8px;
+	}
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
 
 	.body-wrap {
 		flex-wrap: wrap;
+		padding:0;
 	}
+
+	.class-helper {
+		font-size: 1.2rem;
+		pre {
+			white-space: pre-wrap;
+			text-align: center;
+		}
+	}
+
 
 }
 
