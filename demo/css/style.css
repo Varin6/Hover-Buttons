@@ -102,24 +102,6 @@ h5 {
   font-size: 3rem;
 }
 
-.hbtn-x {
-  box-sizing: border-box;
-  display: inline-block;
-  overflow: hidden;
-  padding: 8px 20px;
-  margin: 0 3px 6px 3px;
-  text-align: center;
-  border: solid 2px white;
-  text-decoration: none;
-  color: #ffffff;
-  white-space: nowrap;
-  z-index: 0;
-}
-
-.hbtn-x i {
-  padding-right: 8px;
-}
-
 .buttons-wrapper {
   display: -ms-flexbox;
   display: -webkit-box;
