@@ -17,5 +17,10 @@ Hover Transition CSS/SCSS Buttons
 - Download repo
 - Comment out sets you don't need in `/scss/hoverbuttons.scss`
 - Adjust your variables in `/scss/_variables.scss`
-- Compile
+- Compile and add CSS file to your project
+
+<br>
+
+I will be adding more and more buttons as time goes on...
+Collaboration welcome :)
 
