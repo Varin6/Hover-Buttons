@@ -1523,7 +1523,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-off-br:after, .hbtn-pill.hb-border-off-br:after {
@@ -1544,7 +1544,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-off2-br:after, .hbtn-pill.hb-border-off2-br:after {
@@ -1565,7 +1565,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-off3-br:after, .hbtn-pill.hb-border-off3-br:after {
@@ -1586,7 +1586,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-top-br:after, .hbtn-pill.hb-border-top-br:after {
@@ -1607,7 +1607,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-right-br:after, .hbtn-pill.hb-border-right-br:after {
@@ -1628,7 +1628,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-bottom-br:after, .hbtn-pill.hb-border-bottom-br:after {
@@ -1649,7 +1649,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-left-br:after, .hbtn-pill.hb-border-left-br:after {
@@ -1672,7 +1672,7 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  border-top-width: calc(3px * 2);
+  border-top-width: 6px;
   transition: border-right-color 0.1s 0s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0.14s linear, border-top-width 0.1s 0.14s linear;
 }
 
@@ -1684,7 +1684,7 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
-  border-right-width: calc(3px * 2);
+  border-right-width: 6px;
   transition: border-bottom-color 0.1s 0s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0.14s linear, border-right-width 0.1s 0.14s linear;
 }
 
@@ -1696,7 +1696,7 @@
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  border-bottom-width: calc(3px * 2);
+  border-bottom-width: 6px;
   transition: border-left-color 0.1s 0s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0.14s linear, border-bottom-width 0.1s 0.14s linear;
 }
 
@@ -1708,7 +1708,7 @@
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-width: calc(3px * 2);
+  border-left-width: 6px;
   transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-width 0.1s 0.14s linear;
 }
 
@@ -1746,7 +1746,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-off-br2:after, .hbtn-pill.hb-border-off-br2:after {
@@ -1767,7 +1767,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-off2-br2:after, .hbtn-pill.hb-border-off2-br2:after {
@@ -1788,7 +1788,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-off3-br2:after, .hbtn-pill.hb-border-off3-br2:after {
@@ -1809,7 +1809,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-top-br2:after, .hbtn-pill.hb-border-top-br2:after {
@@ -1830,7 +1830,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-right-br2:after, .hbtn-pill.hb-border-right-br2:after {
@@ -1851,7 +1851,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-bottom-br2:after, .hbtn-pill.hb-border-bottom-br2:after {
@@ -1872,7 +1872,7 @@
   overflow: visible;
   box-sizing: border-box;
   border: none;
-  padding: calc(8px + 2px) calc(20px + 2px);
+  padding: 10px 22px;
 }
 
 .hbtn.hb-border-left-br2:after, .hbtn-pill.hb-border-left-br2:after {
@@ -1895,7 +1895,7 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  border-top-width: calc(3px * 2);
+  border-top-width: 6px;
   transition: all 0.1s 0s linear;
 }
 
@@ -1907,7 +1907,7 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
-  border-right-width: calc(3px * 2);
+  border-right-width: 6px;
   transition: all 0.1s 0s linear;
 }
 
@@ -1919,7 +1919,7 @@
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  border-bottom-width: calc(3px * 2);
+  border-bottom-width: 6px;
   transition: all 0.1s 0s linear;
 }
 
@@ -1931,7 +1931,7 @@
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-width: calc(3px * 2);
+  border-left-width: 6px;
   transition: all 0.1s 0s linear;
 }
 

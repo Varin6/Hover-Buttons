@@ -26,7 +26,7 @@
         overflow: visible;
         box-sizing: border-box;
         border: none;
-        padding: calc(#{$paddingY} + 2px) calc(#{$paddingX} + 2px);
+        padding: ($paddingY + 2px) ($paddingX + 2px);
         &:after {
           box-sizing: border-box;
           position: absolute;
@@ -53,7 +53,7 @@
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: transparent;
-        border-top-width: calc(#{$btnborder} * 2);
+        border-top-width: $btnborder * 2;
         transition: border-right-color 0.1s 0s linear,
         border-bottom-color 0.1s 0.07s linear,
         border-left-color 0.1s 0.14s linear,
@@ -73,7 +73,7 @@
         border-bottom-color: transparent;
         border-left-color: transparent;
         border-top-color: transparent;
-        border-right-width: calc(#{$btnborder} * 2);
+        border-right-width: $btnborder * 2;
         transition: border-bottom-color 0.1s 0s linear,
         border-left-color 0.1s 0.07s linear,
         border-top-color 0.1s 0.14s linear,
@@ -93,7 +93,7 @@
         border-left-color: transparent;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-width: calc(#{$btnborder} * 2);
+        border-bottom-width: $btnborder * 2;
         transition: border-left-color 0.1s 0s linear,
         border-top-color 0.1s 0.07s linear,
         border-right-color 0.1s 0.14s linear,
@@ -113,7 +113,7 @@
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
-        border-left-width: calc(#{$btnborder} * 2);
+        border-left-width: $btnborder * 2;
         transition: border-top-color 0.1s 0s linear,
         border-right-color 0.1s 0.07s linear,
         border-bottom-color 0.1s 0.14s linear,
