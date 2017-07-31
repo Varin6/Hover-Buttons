@@ -5,7 +5,7 @@
 
 // Loop adding properties to classes
 
-.hbtn, .hbtn-pill {
+.hbtn {
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)} {
       border-color: nth($type, 2);

@@ -3,7 +3,7 @@
  */
 
 $(function () {
-    $('.hbtn, .hbtn-pill').on('click', function (e) {
+    $('.hbtn').on('click', function (e) {
         e.preventDefault();
         var outer = $(this).prop('outerHTML');
         console.log(outer);
@@ -13,3 +13,15 @@ $(function () {
     });
 });
 
+
+$(function () {
+    $('.change').on('click', function (e) {
+        e.preventDefault();
+        $('.hbtn').toggleClass('hpill');
+        $('.hbtn-x').toggleClass('hpill');
+        $('.class-helper').hide();
+        $(this).text(function(i, text){
+            return text === "SWITCH TO SOFT!" ? "SWITCH TO SHARP!" : "SWITCH TO SOFT!";
+        });
+    });
+});

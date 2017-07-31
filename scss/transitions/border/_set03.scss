@@ -5,7 +5,7 @@
 
 // Loop adding properties to classes
 
-.hbtn-pill {
+.hpill {
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)} {
       &-br {
@@ -17,7 +17,7 @@
   }
 }
 
-.hbtn, .hbtn-pill {
+.hbtn {
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)} {
       &-br {
@@ -53,7 +53,7 @@
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: transparent;
-        border-top-width: $btnborder * 2;
+        border-top-width: $btnborder + 2px;
         transition: border-right-color 0.1s 0s linear,
         border-bottom-color 0.1s 0.07s linear,
         border-left-color 0.1s 0.14s linear,
@@ -73,7 +73,7 @@
         border-bottom-color: transparent;
         border-left-color: transparent;
         border-top-color: transparent;
-        border-right-width: $btnborder * 2;
+        border-right-width: $btnborder + 2px;
         transition: border-bottom-color 0.1s 0s linear,
         border-left-color 0.1s 0.07s linear,
         border-top-color 0.1s 0.14s linear,
@@ -93,7 +93,7 @@
         border-left-color: transparent;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-width: $btnborder * 2;
+        border-bottom-width: $btnborder + 2px;
         transition: border-left-color 0.1s 0s linear,
         border-top-color 0.1s 0.07s linear,
         border-right-color 0.1s 0.14s linear,
@@ -113,7 +113,7 @@
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
-        border-left-width: $btnborder * 2;
+        border-left-width: $btnborder + 2px;
         transition: border-top-color 0.1s 0s linear,
         border-right-color 0.1s 0.07s linear,
         border-bottom-color 0.1s 0.14s linear,

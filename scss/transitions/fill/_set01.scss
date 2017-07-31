@@ -1,6 +1,6 @@
 @import "fill";
 
-.hbtn, .hbtn-pill {
+.hbtn {
   @each $type in $fillproperties {
     &.hb-fill#{nth($type, 1)} {
       position: relative;

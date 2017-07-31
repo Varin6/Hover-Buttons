@@ -5,7 +5,7 @@
 
 // Loop adding properties to classes
 
-.hbtn-pill {
+.hpill {
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)} {
       &-br2 {
@@ -18,7 +18,7 @@
 }
 
 
-.hbtn, .hbtn-pill {
+.hbtn {
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)} {
       &-br2 {
@@ -51,7 +51,7 @@
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: transparent;
-        border-top-width: $btnborder * 2;
+        border-top-width: $btnborder + 2px;
         transition: all 0.1s 0s linear;
       }
     }
@@ -65,7 +65,7 @@
         border-bottom-color: transparent;
         border-left-color: transparent;
         border-top-color: transparent;
-        border-right-width: $btnborder * 2;
+        border-right-width: $btnborder + 2px;
         transition: all 0.1s 0s linear;
       }
     }
@@ -79,7 +79,7 @@
         border-left-color: transparent;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-width: $btnborder * 2;
+        border-bottom-width: $btnborder + 2px;
         transition: all 0.1s 0s linear;
       }
     }
@@ -93,7 +93,7 @@
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
-        border-left-width: $btnborder * 2;
+        border-left-width: $btnborder + 2px;
         transition: all 0.1s 0s linear;
       }
     }
