@@ -6,7 +6,7 @@ Hover Transition CSS/SCSS Buttons
 <br>
 <br>
 
-## How to use?
+## How to install?
 
 ### Option 1 (Quick)
 - Download repo
@@ -20,6 +20,12 @@ Hover Transition CSS/SCSS Buttons
 - Compile and add CSS file to your project
 
 <br>
+
+## How to use?
+
+- `<a class="hbtn">Hello!</a>` for a rectangular button
+- `<a class="hbtn hpill">Hello!</a>` for a pill button
+- Use cheatsheet for the hover effect classes.
 
 I will be adding more and more buttons as time goes on...
 Collaboration welcome :)
