@@ -10,7 +10,7 @@ Hover Transition CSS/SCSS Buttons
 
 ### Option 1 (Quick)
 - Download repo
-- add hoverbuttons.css to your project
+- add `hoverbuttons.css` to your project
 - [Click here for a cheatsheet](https://varin6.github.io/Hover-Buttons/)
 
 ### Option 2 (SCSS)
