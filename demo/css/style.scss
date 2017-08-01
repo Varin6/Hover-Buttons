@@ -54,10 +54,23 @@ h5 {
 	bottom:0;
 	left:0;
 	width: 100%;
-	max-height:200px;
+
 	display: none;
-	transition-duration: .3s;
+
 	flex-wrap: wrap;
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-family: $font2;
+		font-size: 1.6rem;
+	}
+	.close-icon {
+		position: absolute;
+		top:30px;
+		right: 30px;
+	}
 }
 
 
@@ -86,7 +99,7 @@ h5 {
 }
 
 .hbtn-x {
-	
+
 }
 
 .buttons-wrapper {
