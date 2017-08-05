@@ -40,7 +40,9 @@ $(function () {
 });
 
 
+// Declare selector variable and stylesheet constant (using 2nd stylesheet from the array)
 myClass = '';
+const myStylesheet = ($.makeArray(document.styleSheets[2].cssRules)).filter(({ selectorText }) => selectorText && selectorText.includes(myClass));
 
 $(function () {
     $('.hbtn').on('click', function () {
@@ -56,14 +58,6 @@ $(function () {
 });
 
 
-
-
-
-const myStylesheet = ($.makeArray(document.styleSheets[2].cssRules)).filter(({ selectorText }) => selectorText && selectorText.includes(myClass));
-
-console.log(myStylesheet);
-
-
 function getSelectorCss(selector, stylesheet) {
 
     // myClass - the class of which CSS we want to grab
@@ -77,80 +71,49 @@ function getSelectorCss(selector, stylesheet) {
 
 
         stylesheet.forEach(function(item, index, array) {
-
             var mySelector = item.selectorText;
-           // var regex1 = new RegExp(''+klasa+'[^-\\d].*');    //The old correct one!!!!
             var selectorRegex = new RegExp(selector.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + "(?::.*)?$"); //regex rule to match the given class and all variations (:before, :hover etc)
-
             var matchingSelector = mySelector.match(selectorRegex); // Find those selectors that match 'selector' (contains it in some form)
-            //console.log(matchingSelector);
-
             var finalSelector = '';
-
             // If mySelector matches:
             if (matchingSelector !== null) {
                 //If mySelector contains commas, split it into an array
-                bish = ''; // the ultimate selector used for final result
+                selectorLoopResult = ''; // the ultimate selector used for final result
+
                 if (mySelector.match(/,/)) {  //if mySelector has commas:
                      mySelectorArray = mySelector.split(',');  //split into array where commas separate items
                      mySelectorArray.forEach(function(itemP, indexP) {  //cycle through the array
-
                          regexSelector = new RegExp(selector + '.*');
                          finalSelector = itemP.match(regexSelector);
                          if (finalSelector !== null) {
-                             bish = finalSelector[0];
-                             return bish;
+                             selectorLoopResult = finalSelector[0];
+                             return selectorLoopResult;
                          } else {
                              return;
                          }
                     });
+
                 } else {
-
-                    bish = matchingSelector[0];
+                    selectorLoopResult = matchingSelector[0];
                 }
-
-
-                theSelector = bish;
 
                 itemCss = item.cssText;
                 itemCss = itemCss.substring(itemCss.indexOf("{"));
                 itemCss = itemCss.replace(/[{}]/g, '');
-                    //console.log(itemCss);
-
-
-
-
-                theSelectorIndex = theSel.indexOf(theSelector);
-
+                theSelectorIndex = theSel.indexOf(selectorLoopResult);
 
                 //If selector already in the array, find its corresponding CSS
                 // and add to that rule instead of duplicating the same selector rule
                 if (theSelectorIndex == -1) {
-                    theSel.push(theSelector);
+                    theSel.push(selectorLoopResult);
                     theCss.push(itemCss);
 
                 } else {
 
-
                     itemCss = itemCss.substring(1);
                     newCssRule = theCss[theSelectorIndex] + itemCss;
-                    //console.log('old CSS!!!!     ' + theCss[theSelectorIndex]);
-                    //console.log('new CSS!!!!     ' + newCssRule);
-                    //console.log(itemCss);
                     theCss[theSelectorIndex] = newCssRule;
                 }
-
-
-
-
-                //console.log('Selectors -> ' + theSel)
-                //console.log('CSS -> ' + theCss)
-
-
-
-
-                //console.log('=================================');
-                //console.log('CSS:   ' + theSelector + ' ' + itemCss);
             }
         });
     return [theSel, theCss];
@@ -158,47 +121,23 @@ function getSelectorCss(selector, stylesheet) {
 
 function showCss(selector, stylesheet) {
 
-    //x = [];
-    x = getSelectorCss(selector, stylesheet);
+    buttonStyles = getSelectorCss(selector, stylesheet);
 
-    //console.log(x);
-    // x[0].forEach(function(item, index, array) {
-    //     console.log(item, index);
-    // });
-    //
-    // var xsorted = x[0].slice().sort();
-    //
-    // xsorted.forEach(function(item, index, array) {
-    //     console.log(item, index);
-    // });
-
-
-
-    x[0].forEach(function(item, index, array) {
+    buttonStyles[0].forEach(function(item, index, array) {
        // $('.class-helper .class-helper__inner2 pre').append(' ');
-        $('.class-helper .class-helper__inner2 pre').append(x[0][index] + ' {');
+        $('.class-helper .class-helper__inner2 pre').append(buttonStyles[0][index] + ' {');
         $('.class-helper .class-helper__inner2 pre').append('<br>');
-        //console.log(' ');
-        //console.log(x[0][index] + ' {');
-        //console.log('CSS: ' + x[1][index]);
-        string = x[1][index];
-        //string = string.replace(/\s/g, '');
+        string = buttonStyles[1][index];
         cssArray = string.split(/;/);
-        //console.log(cssArray);
             cssArray.forEach(function(item, index, array) {
                 if (item != ' ') {                                  // dirty fix
                     item+= ';';
-                    //console.log('     ' + item);
                     $('.class-helper .class-helper__inner2 pre').append('     ' + item + '<br>');
                 }
             });
-        //console.log('}');
-        //console.log(' ');
-        //console.log('-------------------------------');
         $('.class-helper .class-helper__inner2 pre').append('} <br>');
         $('.class-helper .class-helper__inner2 pre').append(' ');
         $('.class-helper .class-helper__inner2 pre').append('<br><br>');
-
     });
 }
 
