@@ -1684,7 +1684,7 @@ h5 {
 .class-helper {
   background: #1e1e1e;
   border-top: 2px solid #ebebeb;
-  padding: 30px;
+  padding: 30px 30px 50px 30px;
   color: #ffffff;
   -ms-flex-pack: center;
       -webkit-justify-content: center;
@@ -1724,6 +1724,7 @@ h5 {
 
 .class-helper__inner h4 {
   width: 100%;
+  margin: 15px 0;
 }
 
 .class-helper__inner pre {
@@ -1742,6 +1743,7 @@ h5 {
 
 .class-helper__inner2 h4 {
   width: 100%;
+  margin: 15px 0;
 }
 
 .class-helper__inner2 pre {
@@ -1752,7 +1754,7 @@ h5 {
 
 .class-helper .close-icon {
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 30px;
 }
 
@@ -1836,5 +1838,11 @@ h5 {
   .class-helper pre {
     white-space: pre-wrap;
     text-align: center;
+  }
+  .class-helper .close-icon {
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    right: 30px;
   }
 }

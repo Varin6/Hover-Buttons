@@ -44,7 +44,7 @@ h5 {
 .class-helper {
 	background: #1e1e1e;
 	border-top: 2px solid #ebebeb;
-	padding: 30px;
+	padding: 30px 30px 50px 30px;
 	color: #ffffff;
 	justify-content: center;
 	align-items: center;
@@ -66,6 +66,7 @@ h5 {
 		font-size: 1rem;
 		h4 {
 			width: 100%;
+			margin: 15px 0;
 		}
 		pre {
 			width: 100%;
@@ -75,6 +76,7 @@ h5 {
 	&__inner2 {
 		h4 {
 			width: 100%;
+			margin: 15px 0;
 		}
 		flex-wrap: wrap;
 		max-height: 40vh;
@@ -90,7 +92,7 @@ h5 {
 	}
 	.close-icon {
 		position: absolute;
-		top:30px;
+		top:15px;
 		right: 30px;
 	}
 }
@@ -160,6 +162,12 @@ h5 {
 		pre {
 			white-space: pre-wrap;
 			text-align: center;
+		}
+		.close-icon {
+			position: absolute;
+			top:auto;
+			bottom:15px;
+			right: 30px;
 		}
 	}
 
