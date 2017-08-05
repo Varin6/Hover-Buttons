@@ -1736,7 +1736,7 @@ h5 {
   -ms-flex-wrap: wrap;
           -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-height: 40vh;
+  max-height: 30vh;
   overflow-Y: scroll;
   background: #383838;
 }
