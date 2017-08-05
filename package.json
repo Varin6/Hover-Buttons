@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.4",
+    "laravel-mix": "^0.10.0",
+    "webpack-livereload-plugin": "^0.11.0"
+  }
+}
