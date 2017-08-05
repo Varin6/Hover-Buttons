@@ -40,118 +40,122 @@ $(function () {
 });
 
 
-klasa = '.hb-fill-top';
+myClass = '';
 
 $(function () {
+    $('.hbtn').on('click', function () {
+        classes = $(this).attr('class').split(' ');
 
-    const findClassRules = (selector, stylesheet) => {
-        // combine all rules from all stylesheets to a single array
-        const allRules = stylesheet !== undefined ?
-            Array.from((document.styleSheets[stylesheet] || {}).cssRules || [])
-            :
-            [].concat(...Array.from(document.styleSheets).map(({ cssRules }) => Array.from(cssRules)));
-
-        // filter the rules by their selectorText
-        return allRules.filter(({ selectorText }) => selectorText && selectorText.includes(selector));
-    };
-
-
-    // sheet - tabela ze stylesheet z wyszukana fraza
-    // item - wpis w tabeli, row
-    // string - selector ze zmiennej "item"
-    // index - numer w tabeli
-
-    var sheet = findClassRules(klasa, 2);
-
-    //console.log(sheet);
-
-        sheet.forEach(function(item, index, array) {
-        var string = item.selectorText;
-
-        //console.log(item, index);
-
-        // var myRegexp = /string.(.*)/;
-        // var match = myRegexp.exec(string);
-
-        //var regex1 = new RegExp(''+klasa+'[^-\d].*');
-        var regex1 = new RegExp(''+klasa+'[^-\\d].*');    //The correct one!!!!
-        //var regex1 = new RegExp(''+klasa+':*');
-            //var regex1 = new RegExp(`^\\${klasa}(:{1,2}\\w+)*$`)
+        classes.forEach(function(item1, index, array) {
+            item1 = '.' + item1;
+            myClass = item1;
+            //console.log(item1);
+            showCss(item1, myStylesheet);
+        });
+    });
+});
 
 
-        //console.log(regex1);
 
-        var rule1 = string.match(regex1); // Znajdz te wpisy ktore zawieraja nazwe klasy
 
-            console.log(rule1);
 
-        var rulePodzielony = rule1;
+const myStylesheet = ($.makeArray(document.styleSheets[2].cssRules)).filter(({ selectorText }) => selectorText && selectorText.includes(myClass));
 
-        // jezeli wpis istnieje, to:
-        if (rule1 != null) {
-            //jezeli we wpisie wystepuja przecinki, podziel na tabele
-            if (string.match(/,/)) {
-                 podzielony = string.split(',');
+console.log(myStylesheet);
 
-                 podzielony.forEach(function(itemP, indexP) {
-                     regexPodzielony = new RegExp(klasa+'.*');
-                     indexPodzielony = podzielony.indexOf(klasa);
-                     rulePodzielony = itemP.match(regexPodzielony);
-                     if (rulePodzielony != null) {
-                         console.log('rulePodzielony to: ' + rulePodzielony);
-                         return rulePodzielony;
-                     } else {
-                         return rule1
-                     }
-                 });
-            }
 
-            if (rulePodzielony != '') {
-                console.log('rulePodzielony to: ' + rulePodzielony);
-            } else {
-                console.log('rulePodzielony to: ' + rule1);
-            }
+function getSelectorCss(selector, stylesheet) {
 
-            oko = new RegExp(rule1);
-            //console.log(oko);
+    // myClass - the class of which CSS we want to grab
+    // myStylesheet - Array from the selected stylesheet that matches myClass
+    // item - item in the myStylesheet array
+    // mySelector - selector from item
+    // index - index of the item in the myStylesheet array
 
+    theSel = [];
+    theCss = [];
+
+
+        stylesheet.forEach(function(item, index, array) {
+
+            var mySelector = item.selectorText;
+           // var regex1 = new RegExp(''+klasa+'[^-\\d].*');    //The old correct one!!!!
+            var selectorRegex = new RegExp(selector.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + "(?::.*)?$"); //regex rule to match the given class and all variations (:before, :hover etc)
+
+            var matchingSelector = mySelector.match(selectorRegex); // Find those selectors that match 'selector' (contains it in some form)
+            //console.log(matchingSelector);
+
+            var finalSelector = '';
+
+            // If mySelector matches:
+            if (matchingSelector !== null) {
+                //If mySelector contains commas, split it into an array
+                bish = ''; // the ultimate selector used for final result
+                if (mySelector.match(/,/)) {  //if mySelector has commas:
+                     mySelectorArray = mySelector.split(',');  //split into array where commas separate items
+                     mySelectorArray.forEach(function(itemP, indexP) {  //cycle through the array
+
+                         regexSelector = new RegExp(selector + '.*');
+                         finalSelector = itemP.match(regexSelector);
+                         if (finalSelector !== null) {
+                             bish = finalSelector[0];
+                             return bish;
+                         } else {
+                             return;
+                         }
+                    });
+                } else {
+
+                    bish = matchingSelector[0];
+                }
+
+            theSelector = bish;
             itemCss = item.cssText;
+            itemCss = itemCss.substring(itemCss.indexOf("{"));
 
-            itemCss = itemCss.replace(oko, '');
 
+            itemCss = itemCss.replace(/[{}]/g, '');
+                //console.log(itemCss);
+            theSel.push(theSelector);
+            theCss.push(itemCss);
 
-            console.log('=================================');
-            //console.log('Selector:   ' + rulePodzielony);
-            console.log('CSS:   ' + itemCss);
-            console.log('=================================');
+            //console.log('^#&^$#&^# ' + theSel)
+            //console.log('^#&^$#&^# ' + theCss)
+
+            //console.log('=================================');
+            //console.log('CSS:   ' + theSelector + ' ' + itemCss);
+
         }
-
-
-
-
-        // if (1 < string.match(/\./g).length) {
-        //     return;
-        // } else {
-        var tabela = string.split(item, 2);
-
-        //console.log(tabela, index);
-        //}
 
     });
 
-
-});
-
-// var phrase = "yesthisismyphrase=thisiswhatIwantmatched";
-// var myRegexp = /phrase=(.*)/;
-// var match = myRegexp.exec(phrase);
-// alert(match[1]);
+    return [theSel, theCss];
 
 
+}
 
+function showCss(selector, stylesheet) {
 
+    x = getSelectorCss(selector, stylesheet)
+console.log(stylesheet);
+    x[0].forEach(function(item, index, array) {
+        console.log(' ');
+        console.log(x[0][index] + ' {');
+        //console.log('CSS: ' + x[1][index]);
+        string = x[1][index];
+        //string = string.replace(/\s/g, '');
+        cssArray = string.split(/;/);
+        //console.log(cssArray);
+            cssArray.forEach(function(item, index, array) {
+                if (item != ' ') {                                  // dirty fix
+                    item+= ';';
+                    console.log('     ' + item);
+                }
+            });
+        console.log('}');
+        console.log(' ');
+        console.log('-------------------------------');
 
-$('.hbtn').not($('.hbtn-x')).on('click', function (e) {
-
-});
+    });
+}
 
