@@ -4,7 +4,6 @@
   @each $type in $fillproperties {
     &.hb-fill#{nth($type, 1)} {
       &-br {
-        position: relative;
         &:before {
           position: absolute;
           content: '';

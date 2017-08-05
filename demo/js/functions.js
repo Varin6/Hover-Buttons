@@ -14,7 +14,7 @@ function helperInit () {
         console.log(outer);
         klon = $(this).clone().css('margin-right', '20px');
 
-        $('.class-helper .class-helper__inner').css('display', 'flex').empty().prepend('<pre></pre>').prepend(klon);
+        $('.class-helper .class-helper__inner').css('display', 'flex').empty().prepend('<h4>HTML:</h4><pre></pre><h4>CSS:</h4>').prepend(klon);
         $('.class-helper .class-helper__inner pre').text(outer);
         $('.class-helper').slideDown();
     });
@@ -28,7 +28,7 @@ $(function () {
         $(this).toggleClass('hpill');
         $('.class-helper').slideUp();
         $(this).text(function(i, text){
-            return text === "SWITCH TO SOFT!" ? "SWITCH TO SHARP!" : "SWITCH TO SOFT!";
+            return text === "PILL!" ? "RECTANGLE!" : "PILL!";
         });
     });
 });
@@ -45,7 +45,7 @@ myClass = '';
 $(function () {
     $('.hbtn').on('click', function () {
         classes = $(this).attr('class').split(' ');
-
+        $('.class-helper .class-helper__inner2').css('display', 'flex').empty().prepend('<pre></pre>')
         classes.forEach(function(item1, index, array) {
             item1 = '.' + item1;
             myClass = item1;
@@ -109,38 +109,77 @@ function getSelectorCss(selector, stylesheet) {
                     bish = matchingSelector[0];
                 }
 
-            theSelector = bish;
-            itemCss = item.cssText;
-            itemCss = itemCss.substring(itemCss.indexOf("{"));
+
+                theSelector = bish;
+
+                itemCss = item.cssText;
+                itemCss = itemCss.substring(itemCss.indexOf("{"));
+                itemCss = itemCss.replace(/[{}]/g, '');
+                    //console.log(itemCss);
 
 
-            itemCss = itemCss.replace(/[{}]/g, '');
-                //console.log(itemCss);
-            theSel.push(theSelector);
-            theCss.push(itemCss);
 
-            //console.log('^#&^$#&^# ' + theSel)
-            //console.log('^#&^$#&^# ' + theCss)
 
-            //console.log('=================================');
-            //console.log('CSS:   ' + theSelector + ' ' + itemCss);
+                theSelectorIndex = theSel.indexOf(theSelector);
 
-        }
 
-    });
+                //If selector already in the array, find its corresponding CSS
+                // and add to that rule instead of duplicating the same selector rule
+                if (theSelectorIndex == -1) {
+                    theSel.push(theSelector);
+                    theCss.push(itemCss);
 
+                } else {
+
+
+                    itemCss = itemCss.substring(1);
+                    newCssRule = theCss[theSelectorIndex] + itemCss;
+                    //console.log('old CSS!!!!     ' + theCss[theSelectorIndex]);
+                    //console.log('new CSS!!!!     ' + newCssRule);
+                    //console.log(itemCss);
+                    theCss[theSelectorIndex] = newCssRule;
+                }
+
+
+
+
+                //console.log('Selectors -> ' + theSel)
+                //console.log('CSS -> ' + theCss)
+
+
+
+
+                //console.log('=================================');
+                //console.log('CSS:   ' + theSelector + ' ' + itemCss);
+            }
+        });
     return [theSel, theCss];
-
-
 }
 
 function showCss(selector, stylesheet) {
 
-    x = getSelectorCss(selector, stylesheet)
-console.log(stylesheet);
+    //x = [];
+    x = getSelectorCss(selector, stylesheet);
+
+    //console.log(x);
+    // x[0].forEach(function(item, index, array) {
+    //     console.log(item, index);
+    // });
+    //
+    // var xsorted = x[0].slice().sort();
+    //
+    // xsorted.forEach(function(item, index, array) {
+    //     console.log(item, index);
+    // });
+
+
+
     x[0].forEach(function(item, index, array) {
-        console.log(' ');
-        console.log(x[0][index] + ' {');
+       // $('.class-helper .class-helper__inner2 pre').append(' ');
+        $('.class-helper .class-helper__inner2 pre').append(x[0][index] + ' {');
+        $('.class-helper .class-helper__inner2 pre').append('<br>');
+        //console.log(' ');
+        //console.log(x[0][index] + ' {');
         //console.log('CSS: ' + x[1][index]);
         string = x[1][index];
         //string = string.replace(/\s/g, '');
@@ -149,12 +188,16 @@ console.log(stylesheet);
             cssArray.forEach(function(item, index, array) {
                 if (item != ' ') {                                  // dirty fix
                     item+= ';';
-                    console.log('     ' + item);
+                    //console.log('     ' + item);
+                    $('.class-helper .class-helper__inner2 pre').append('     ' + item + '<br>');
                 }
             });
-        console.log('}');
-        console.log(' ');
-        console.log('-------------------------------');
+        //console.log('}');
+        //console.log(' ');
+        //console.log('-------------------------------');
+        $('.class-helper .class-helper__inner2 pre').append('} <br>');
+        $('.class-helper .class-helper__inner2 pre').append(' ');
+        $('.class-helper .class-helper__inner2 pre').append('<br><br>');
 
     });
 }

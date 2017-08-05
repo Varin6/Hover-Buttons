@@ -1,4 +1,5 @@
 .hbtn {
+  position: relative;
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
@@ -20,8 +21,8 @@
   border-radius: 50px;
 }
 
-.hbtn.hb-fill-on {
-  position: relative;
+.hpill:after {
+  border-radius: 50px;
 }
 
 .hbtn.hb-fill-on:before {
@@ -45,10 +46,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom {
-  position: relative;
-}
-
 .hbtn.hb-fill-bottom:before {
   position: absolute;
   content: '';
@@ -68,10 +65,6 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-left {
-  position: relative;
 }
 
 .hbtn.hb-fill-left:before {
@@ -95,10 +88,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top {
-  position: relative;
-}
-
 .hbtn.hb-fill-top:before {
   position: absolute;
   content: '';
@@ -118,10 +107,6 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right {
-  position: relative;
 }
 
 .hbtn.hb-fill-right:before {
@@ -145,10 +130,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev {
-  position: relative;
-}
-
 .hbtn.hb-fill-on-rev:before {
   position: absolute;
   content: '';
@@ -168,10 +149,6 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-}
-
-.hbtn.hb-fill-bottom-rev {
-  position: relative;
 }
 
 .hbtn.hb-fill-bottom-rev:before {
@@ -195,10 +172,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev {
-  position: relative;
-}
-
 .hbtn.hb-fill-left-rev:before {
   position: absolute;
   content: '';
@@ -220,10 +193,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-rev {
-  position: relative;
-}
-
 .hbtn.hb-fill-top-rev:before {
   position: absolute;
   content: '';
@@ -243,10 +212,6 @@
   width: 100%;
   height: 0;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-rev {
-  position: relative;
 }
 
 .hbtn.hb-fill-right-rev:before {
@@ -294,11 +259,6 @@
   transition: color 0.3s ease, background 0s ease;
 }
 
-.hbtn.hb-fill-on-bg {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-on-bg:before {
   position: absolute;
   content: '';
@@ -314,19 +274,10 @@
   opacity: 0;
 }
 
-.hbtn.hb-fill-on-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-on-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-bottom-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-bottom-bg:before {
@@ -344,19 +295,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-bottom-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-left-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-left-bg:before {
@@ -374,19 +316,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-left-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-top-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-top-bg:before {
@@ -404,19 +337,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-top-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-right-bg:before {
@@ -434,19 +358,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-right-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-on-rev-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-on-rev-bg:before {
@@ -464,19 +379,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-on-rev-bg:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
-}
-
-.hbtn.hb-fill-bottom-rev-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-bottom-rev-bg:before {
@@ -494,19 +400,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-rev-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-bottom-rev-bg:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
-}
-
-.hbtn.hb-fill-left-rev-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-left-rev-bg:before {
@@ -524,19 +421,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-left-rev-bg:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-top-rev-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-top-rev-bg:before {
@@ -554,19 +442,10 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-rev-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-top-rev-bg:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-rev-bg {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-right-rev-bg:before {
@@ -584,10 +463,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-right-rev-bg:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-right-rev-bg:hover:before {
   width: 0;
   height: 100%;
@@ -597,29 +472,25 @@
 .hb-fill-top-bg, .hb-fill-right-bg, .hb-fill-bottom-bg, .hb-fill-left-bg, .hb-fill-on-bg {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: all 0.3s ease;
 }
 
 .hb-fill-top-bg:hover, .hb-fill-right-bg:hover, .hb-fill-bottom-bg:hover, .hb-fill-left-bg:hover, .hb-fill-on-bg:hover {
   color: #000000;
   background: #ffffff;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hb-fill-top-rev-bg, .hb-fill-right-rev-bg, .hb-fill-bottom-rev-bg, .hb-fill-left-rev-bg, .hb-fill-on-rev-bg {
   background: #ffffff;
   color: #000000;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hb-fill-top-rev-bg:hover, .hb-fill-right-rev-bg:hover, .hb-fill-bottom-rev-bg:hover, .hb-fill-left-rev-bg:hover, .hb-fill-on-rev-bg:hover {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
-}
-
-.hbtn.hb-fill-on-br {
-  position: relative;
+  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-on-br:before {
@@ -644,10 +515,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-bottom-br {
-  position: relative;
-}
-
 .hbtn.hb-fill-bottom-br:before {
   position: absolute;
   content: '';
@@ -668,10 +535,6 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-left-br {
-  position: relative;
 }
 
 .hbtn.hb-fill-left-br:before {
@@ -696,10 +559,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-br {
-  position: relative;
-}
-
 .hbtn.hb-fill-top-br:before {
   position: absolute;
   content: '';
@@ -720,10 +579,6 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-br {
-  position: relative;
 }
 
 .hbtn.hb-fill-right-br:before {
@@ -748,10 +603,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-on-rev-br {
-  position: relative;
-}
-
 .hbtn.hb-fill-on-rev-br:before {
   position: absolute;
   content: '';
@@ -772,10 +623,6 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-}
-
-.hbtn.hb-fill-bottom-rev-br {
-  position: relative;
 }
 
 .hbtn.hb-fill-bottom-rev-br:before {
@@ -800,10 +647,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-left-rev-br {
-  position: relative;
-}
-
 .hbtn.hb-fill-left-rev-br:before {
   position: absolute;
   content: '';
@@ -826,10 +669,6 @@
   opacity: 1;
 }
 
-.hbtn.hb-fill-top-rev-br {
-  position: relative;
-}
-
 .hbtn.hb-fill-top-rev-br:before {
   position: absolute;
   content: '';
@@ -850,10 +689,6 @@
   width: 100%;
   height: 0;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-rev-br {
-  position: relative;
 }
 
 .hbtn.hb-fill-right-rev-br:before {
@@ -902,11 +737,6 @@
   transition: color 0.3s ease, background 0s ease;
 }
 
-.hbtn.hb-fill-on-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-on-bg-br:before {
   position: absolute;
   content: '';
@@ -923,19 +753,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-on-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-on-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-bottom-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-bottom-bg-br:before {
@@ -954,19 +775,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-bottom-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-bottom-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-left-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-left-bg-br:before {
@@ -985,19 +797,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-left-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-left-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-top-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-top-bg-br:before {
@@ -1016,19 +819,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-top-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-top-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-right-bg-br:before {
@@ -1047,19 +841,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-right-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-right-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-on-rev-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-on-rev-bg-br:before {
@@ -1078,19 +863,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-on-rev-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-on-rev-bg-br:hover:before {
   width: 100%;
   height: 100%;
   opacity: 0;
-}
-
-.hbtn.hb-fill-bottom-rev-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-bottom-rev-bg-br:before {
@@ -1109,19 +885,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-bottom-rev-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-bottom-rev-bg-br:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
-}
-
-.hbtn.hb-fill-left-rev-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-left-rev-bg-br:before {
@@ -1140,19 +907,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-left-rev-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-left-rev-bg-br:hover:before {
   width: 0;
   height: 100%;
   opacity: 1;
-}
-
-.hbtn.hb-fill-top-rev-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-top-rev-bg-br:before {
@@ -1171,19 +929,10 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-top-rev-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-top-rev-bg-br:hover:before {
   width: 100%;
   height: 0;
   opacity: 1;
-}
-
-.hbtn.hb-fill-right-rev-bg-br {
-  position: relative;
-  transition: all 0.3s ease;
 }
 
 .hbtn.hb-fill-right-rev-bg-br:before {
@@ -1202,10 +951,6 @@
   border: solid 3px #ffffff;
 }
 
-.hbtn.hb-fill-right-rev-bg-br:hover {
-  transition: all 0.3s ease;
-}
-
 .hbtn.hb-fill-right-rev-bg-br:hover:before {
   width: 0;
   height: 100%;
@@ -1215,25 +960,25 @@
 .hb-fill-top-bg-br, .hb-fill-right-bg-br, .hb-fill-bottom-bg-br, .hb-fill-left-bg-br, .hb-fill-on-bg-br {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: all 0.3s ease;
 }
 
 .hb-fill-top-bg-br:hover, .hb-fill-right-bg-br:hover, .hb-fill-bottom-bg-br:hover, .hb-fill-left-bg-br:hover, .hb-fill-on-bg-br:hover {
   color: #000000;
   background: #ffffff;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hb-fill-top-rev-bg-br, .hb-fill-right-rev-bg-br, .hb-fill-bottom-rev-bg-br, .hb-fill-left-rev-bg-br, .hb-fill-on-rev-bg-br {
   background: #ffffff;
   color: #000000;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hb-fill-top-rev-bg-br:hover, .hb-fill-right-rev-bg-br:hover, .hb-fill-bottom-rev-bg-br:hover, .hb-fill-left-rev-bg-br:hover, .hb-fill-on-rev-bg-br:hover {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: all 0.3s ease;
 }
 
 .hbtn.hb-border-off {
@@ -1472,34 +1217,6 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   transition: all 0.1s 0s linear;
-}
-
-.hpill.hb-border-off-br:after {
-  border-radius: 50px;
-}
-
-.hpill.hb-border-off2-br:after {
-  border-radius: 50px;
-}
-
-.hpill.hb-border-off3-br:after {
-  border-radius: 50px;
-}
-
-.hpill.hb-border-top-br:after {
-  border-radius: 50px;
-}
-
-.hpill.hb-border-right-br:after {
-  border-radius: 50px;
-}
-
-.hpill.hb-border-bottom-br:after {
-  border-radius: 50px;
-}
-
-.hpill.hb-border-left-br:after {
-  border-radius: 50px;
 }
 
 .hbtn.hb-border-off-br {

@@ -4,8 +4,6 @@
   @each $type in $fillproperties {
     &.hb-fill#{nth($type, 1)} {
       &-bg {
-        position: relative;
-        transition: all 0.3s ease;
         &:before {
           position: absolute;
           content: '';
@@ -21,7 +19,6 @@
           opacity: nth($type, 8);
         }
         &:hover {
-          transition: all 0.3s ease;
           &:before {
             width: nth($type, 9);
             height: nth($type, 10);
@@ -38,13 +35,11 @@
     &-bg {
       background: transparent;
       color: $txtcolor;
-      transition: color 0.3s ease,
-      background 0s ease;
+      transition: all 0.3s ease;
       &:hover {
         color: $txtcolorfill;
         background: $btncolor;
-        transition: color 0.3s ease,
-        background 0s 0.3s ease;
+        transition: all 0.3s ease;
       }
     }
   }
@@ -55,13 +50,11 @@
     &-bg {
       background: $btncolor;
       color: $txtcolorfill;
-      transition: color 0.3s ease,
-      background 0s 0.3s ease;
+      transition: all 0.3s ease;
       &:hover {
         background: transparent;
         color: $txtcolor;
-        transition: color 0.3s ease,
-        background 0s ease;
+        transition: all 0.3s ease;
       }
     }
   }

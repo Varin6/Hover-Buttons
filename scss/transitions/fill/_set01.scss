@@ -3,7 +3,6 @@
 .hbtn {
   @each $type in $fillproperties {
     &.hb-fill#{nth($type, 1)} {
-      position: relative;
       &:before {
         position: absolute;
         content: '';

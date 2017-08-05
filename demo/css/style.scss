@@ -54,17 +54,39 @@ h5 {
 	bottom:0;
 	left:0;
 	width: 100%;
-
 	display: none;
-
 	flex-wrap: wrap;
+
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		font-family: $font2;
-		font-size: 1.6rem;
+		font-size: 1rem;
+		h4 {
+			width: 100%;
+		}
+		pre {
+			width: 100%;
+			background: #383838;
+		}
+	}
+	&__inner2 {
+		h4 {
+			width: 100%;
+		}
+		flex-wrap: wrap;
+		max-height: 40vh;
+		overflow-Y: scroll;
+		background: #383838;
+		pre {
+			white-space: pre-wrap;
+			font-size: 1rem;
+			text-align: left !important;
+
+
+		}
 	}
 	.close-icon {
 		position: absolute;

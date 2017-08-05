@@ -80,7 +80,35 @@ h5 {
       -webkit-align-items: center;
           align-items: center;
   font-family: "Lato", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
+}
+
+.class-helper__inner h4 {
+  width: 100%;
+}
+
+.class-helper__inner pre {
+  width: 100%;
+  background: #383838;
+}
+
+.class-helper__inner2 {
+  -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 40vh;
+  overflow-Y: scroll;
+  background: #383838;
+}
+
+.class-helper__inner2 h4 {
+  width: 100%;
+}
+
+.class-helper__inner2 pre {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  text-align: left !important;
 }
 
 .class-helper .close-icon {

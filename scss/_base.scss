@@ -3,6 +3,7 @@
 //===================================
 
 .hbtn {
+  position: relative;
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
@@ -22,4 +23,7 @@
 
 .hpill {
   border-radius: 50px;
+  &:after {
+    border-radius: 50px;
+  }
 }
