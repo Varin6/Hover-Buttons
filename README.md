@@ -14,7 +14,6 @@ Hover Transition CSS/SCSS Buttons
 ## How to use?
 
 ### Option 1 (Super quick)
-- Download repo
 - [Click here for a cheatsheet](https://varin6.github.io/Hover-Buttons/)
 - Click on the button you like and copy styles and markup.
 
