@@ -9,6 +9,7 @@ Hover Transition CSS/SCSS Buttons
 - Download the repository
 - `npm install`
 - `npm run watch` if you want it to watch and compile your SCSS as you work on it
+<br>
 
 ## How to use?
 
