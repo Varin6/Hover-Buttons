@@ -4,13 +4,6 @@ Hover Transition CSS/SCSS Buttons
 ## [DEMO/CHEATSHEET](https://varin6.github.io/Hover-Buttons/)
 <br>
 
-## How to install?
-
-- Download the repository
-- `npm install`
-- `npm run watch` if you want it to watch and compile your SCSS as you work on it
-<br>
-
 ## How to use?
 
 ### Option 1 (Super quick)
@@ -25,6 +18,8 @@ Hover Transition CSS/SCSS Buttons
 
 ### Option 3 (SCSS)
 - Download repo
+- `npm install`
+- `npm run watch` if you want it to watch and compile your SCSS as you work on it
 - Comment out sets you don't need in `/scss/hoverbuttons.scss`
 - Adjust your variables in `/scss/_variables.scss`
 - Compile and add CSS file to your project
