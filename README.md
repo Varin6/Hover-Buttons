@@ -15,12 +15,12 @@ Hover Transition CSS/SCSS Buttons
 ### Option 1 (Super quick)
 - Download repo
 - [Click here for a cheatsheet](https://varin6.github.io/Hover-Buttons/)
-- click on the button you like and copy styles and markup.
+- Click on the button you like and copy styles and markup.
 
 
 ### Option 2 (Quick)
 - Download repo
-- add `hoverbuttons.css` to your project
+- Add `hoverbuttons.css` to your project
 - [Click here for a cheatsheet](https://varin6.github.io/Hover-Buttons/)
 
 ### Option 3 (SCSS)
