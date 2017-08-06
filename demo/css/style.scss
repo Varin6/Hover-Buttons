@@ -18,6 +18,8 @@ body {
 		background-size:cover;
 		background-position:center center;
 		background-attachment:fixed;
+		width: 100vw;
+		height: 100vh;
 		&:after {
 			position: fixed;
 			content: '';
