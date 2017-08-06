@@ -221,6 +221,10 @@ h5 {
   right: 30px;
 }
 
+.hbtn-x {
+  margin: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .body-wrap {
     -ms-flex-wrap: wrap;
