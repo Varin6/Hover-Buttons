@@ -2558,7 +2558,6 @@
 }
 
 .hbtn.hb-border-left-br3:after {
-  border-radius: 0px;
   bottom: 0;
   left: 0;
   border-right-width: 3px;
@@ -2948,6 +2947,16 @@ h5 {
 
 .container h3 {
   font-size: 3rem;
+}
+
+.options-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #1e1e1e;
+  border-bottom: 2px solid #ebebeb;
+  z-index: 5;
 }
 
 .buttons-wrapper {

@@ -246,3 +246,23 @@ function getAllIndexes(arr, val) {
     return indexes;
 }
 
+$(function () {
+    var distance = $('div').offset().top;
+        console.log(distance);
+});
+
+var distance = $('.options').offset().top,
+    $window = $(window);
+
+$window.scroll(function() {
+    if ( $window.scrollTop() >= distance ) {
+        $('.options').addClass('options-fixed');
+        console.log(distance);
+    }
+
+    if ( $window.scrollTop() < distance ) {
+        $('.options').removeClass('options-fixed');
+        console.log(distance);
+    }
+
+});
