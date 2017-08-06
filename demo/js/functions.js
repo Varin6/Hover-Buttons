@@ -259,16 +259,23 @@ $(function () {
 });
 
 var distance = $('.options').offset().top,
-    $window = $(window);
+    $window = $(window),
+    height1 = $('.options').outerHeight();
+
+console.log(height1);
+
+
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distance ) {
         $('.options').addClass('options-fixed');
+        $('.body-wrap--light').css('margin-bottom', height1 +'px');
         console.log(distance);
     }
 
     if ( $window.scrollTop() < distance ) {
         $('.options').removeClass('options-fixed');
+        $('.body-wrap--light').css('margin-bottom','0px');
         console.log(distance);
     }
 
