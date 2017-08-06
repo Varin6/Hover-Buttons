@@ -9,7 +9,9 @@
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)} {
       &-br {
-
+        &:after {
+          border-radius: 50px;
+        }
       }
     }
   }

@@ -12,7 +12,7 @@ function helperInit () {
     $('.hbtn').not($('.hbtn-x')).on('click', function (e) {
         e.preventDefault();
         var outer = $(this).prop('outerHTML');
-        console.log(outer);
+        //console.log(outer);
         klon = $(this).clone().css('margin-right', '20px');
 
         $('.class-helper .class-helper__inner').css('display', 'flex').empty().prepend('<h4>HTML:</h4><pre></pre><h4>CSS:</h4>').prepend(klon);
@@ -31,6 +31,29 @@ $(function () {
         $(this).text(function(i, text){
             return text === "PILL!" ? "RECTANGLE!" : "PILL!";
         });
+    });
+});
+
+//changes background to image
+$(function () {
+    $('.changeBackground').on('click', function (e) {
+        e.preventDefault();
+        if ($('body').hasClass('body-overlay')) {
+            $('body').css('background-image', 'none').removeClass('body-overlay');
+        } else {
+            var imagesArray = [
+                'url("demo/backgrounds/1.jpg")',
+                'url("demo/backgrounds/2.jpg")',
+                'url("demo/backgrounds/3.jpg")',
+                'url("demo/backgrounds/4.jpg")',
+                'url("demo/backgrounds/5.jpg")'
+            ];
+            var randBackground = Math.floor(Math.random() * (imagesArray.length));
+            $('body').addClass('body-overlay').css('background-image', imagesArray[randBackground]);
+
+            $('.class-helper').slideUp();
+
+        }
     });
 });
 
@@ -69,12 +92,13 @@ const myStylesheet = ($.makeArray(document.styleSheets[2].cssRules)).filter(({ s
 
 $(function () {
     $('.hbtn').on('click', function () {
+        thisButton = $(this);
         classes = $(this).attr('class').split(' ');
         $('.class-helper .class-helper__inner2').css('display', 'flex').empty().prepend('<pre></pre>')
         classes.forEach(function(item1, index, array) {
             item1 = '.' + item1;
             myClass = item1;
-            //console.log(item1);
+            //console.log(thisButton);
             showCss(item1, myStylesheet);
         });
     });
@@ -108,6 +132,16 @@ function getSelectorCss(selector, stylesheet) {
             if (matchingSelector !== null) {
                 //If mySelector contains commas, split it into an array
                 selectorLoopResult = ''; // the ultimate selector used for final result
+
+                //console.log(mySelector);
+                //console.log(thisButton);
+
+                // If it's not a pill -> skip selectors with "pill" in them
+                if (mySelector.match(/hpill/)) {
+                    if (!thisButton.hasClass('hpill')) {
+                        return;
+                    }
+                }
 
                 if (mySelector.match(/,/)) {  //if mySelector has commas:
                      mySelectorArray = mySelector.split(',');  //split into array where commas separate items
@@ -158,15 +192,57 @@ function showCss(selector, stylesheet) {
         $('.class-helper .class-helper__inner2 pre').append('<br>');
         string = buttonStyles[1][index];
         cssArray = string.split(/;/);
+
+        cssArray = cleanArray(cssArray)
+
             cssArray.forEach(function(item, index, array) {
-                if (item != ' ') {                                  // dirty fix
+
                     item+= ';';
                     $('.class-helper .class-helper__inner2 pre').append('     ' + item + '<br>');
-                }
+
             });
         $('.class-helper .class-helper__inner2 pre').append('} <br>');
         $('.class-helper .class-helper__inner2 pre').append(' ');
         $('.class-helper .class-helper__inner2 pre').append('<br><br>');
     });
+}
+
+
+//removes white space element and duplicates.
+function cleanArray(array) {
+
+    array2 = [];
+    //arraySplit = [];
+
+    if (array[array.length-1] == ' ') {
+        array.pop();
+    }
+
+    while (array.length > 0) {
+        cssItem = array[array.length-1];
+        allIndexes = getAllIndexes(array, cssItem);
+
+        if (allIndexes.length > 0) {
+
+            for (var i = allIndexes.length -2; i >= 0; i--) {
+                array.splice(allIndexes[i], 1);
+            }
+
+        }
+        array2.push(cssItem);
+        array.pop();
+    }
+
+    return array2.reverse();
+}
+
+
+//returns array of all indexes for a value (all duplicates)
+function getAllIndexes(arr, val) {
+    var indexes = [], i = -1;
+    while ((i = arr.indexOf(val, i+1)) != -1){
+        indexes.push(i);
+    }
+    return indexes;
 }
 

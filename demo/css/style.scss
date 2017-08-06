@@ -1,4 +1,4 @@
-$font:'Bellefair', serif;
+$font:'Righteous', serif;
 $font2:'Lato', sans-serif;
 
 * {
@@ -13,6 +13,22 @@ html, body {
 
 body {
 	background: #1e1e1e;
+	&.body-overlay {
+		position: relative;
+		background-size:cover;
+		background-position:center center;
+		background-attachment:fixed;
+		&:after {
+			position: fixed;
+			content: '';
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background-color: rgba(#000, 0.55);
+		}
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -39,6 +55,64 @@ h5 {
 
 .lead {
 	font-family: $font;
+}
+
+
+
+
+.body-wrap {
+	padding: 30px 30px;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+	flex-wrap: wrap;
+	margin: 0;
+	font-family: $font2;
+	margin-bottom: 250px;
+	&--light {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#424242+0,1e1e1e+100&1+0,0+100 */
+		background: -moz-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(30,30,30,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(66,66,66,1) 0%,rgba(30,30,30,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(66,66,66,1) 0%,rgba(30,30,30,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#001e1e1e',GradientType=0 ); /* IE6-9 */
+		margin:0;
+	}
+}
+
+.container {
+	padding:20px 15px;
+	width: 100%;
+	text-align: center;
+	&.bg-color {
+		background: #1e1e1e !important;
+	}
+	h3 {
+		font-size:3rem;
+	}
+}
+
+
+
+.buttons-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 20px 0 50px 0;
+	iframe {
+		margin: 0 10px !important;
+		margin-bottom: 10px !important;
+	}
+}
+
+.hsmall {
+	font-size: 12px;
+	padding: 4px 10px;
+	&:after {
+		//padding: 3px 8px;
+	}
 }
 
 .class-helper {
@@ -96,58 +170,6 @@ h5 {
 		right: 30px;
 	}
 }
-
-
-.body-wrap {
-	padding: 30px 30px;
-	color: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items:flex-start;
-	flex-wrap: wrap;
-	margin: 0;
-	font-family: $font2;
-	margin-bottom: 250px;
-}
-
-.container {
-	padding:20px 15px;
-	width: 100%;
-	text-align: center;
-	&.bg-color {
-		background: #1e1e1e !important;
-	}
-	h3 {
-		font-size:3rem;
-	}
-}
-
-.hbtn-x {
-
-}
-
-.buttons-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 100%;
-	margin: 20px 0 50px 0;
-	iframe {
-		margin: 0 10px !important;
-		margin-bottom: 10px !important;
-	}
-}
-
-.hsmall {
-	font-size: 12px;
-	padding: 4px 10px;
-	&:after {
-		padding: 3px 8px;
-	}
-}
-
-
 
 
 @media only screen and (max-width: 768px) {

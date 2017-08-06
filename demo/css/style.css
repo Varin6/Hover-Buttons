@@ -12,9 +12,27 @@ body {
   background: #1e1e1e;
 }
 
+body.body-overlay {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+body.body-overlay:after {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
-  font-family: "Bellefair", serif;
+  font-family: "Righteous", serif;
   font-weight: 400;
 }
 
@@ -39,7 +57,81 @@ h5 {
 }
 
 .lead {
-  font-family: "Bellefair", serif;
+  font-family: "Righteous", serif;
+}
+
+.body-wrap {
+  padding: 30px 30px;
+  color: #ffffff;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+      -webkit-justify-content: center;
+          justify-content: center;
+  -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 250px;
+}
+
+.body-wrap--light {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#424242+0,1e1e1e+100&1+0,0+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #424242 0%, rgba(30, 30, 30, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#001e1e1e',GradientType=0 );
+  /* IE6-9 */
+  margin: 0;
+}
+
+.container {
+  padding: 20px 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.container.bg-color {
+  background: #1e1e1e !important;
+}
+
+.container h3 {
+  font-size: 3rem;
+}
+
+.buttons-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+      -webkit-align-items: center;
+          align-items: center;
+  -ms-flex-pack: center;
+      -webkit-justify-content: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0 50px 0;
+}
+
+.buttons-wrapper iframe {
+  margin: 0 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.hsmall {
+  font-size: 12px;
+  padding: 4px 10px;
 }
 
 .class-helper {
@@ -117,73 +209,6 @@ h5 {
   position: absolute;
   top: 15px;
   right: 30px;
-}
-
-.body-wrap {
-  padding: 30px 30px;
-  color: #ffffff;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-pack: center;
-      -webkit-justify-content: center;
-          justify-content: center;
-  -ms-flex-align: start;
-      -webkit-align-items: flex-start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-          -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 250px;
-}
-
-.container {
-  padding: 20px 15px;
-  width: 100%;
-  text-align: center;
-}
-
-.container.bg-color {
-  background: #1e1e1e !important;
-}
-
-.container h3 {
-  font-size: 3rem;
-}
-
-.buttons-wrapper {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-      -webkit-align-items: center;
-          align-items: center;
-  -ms-flex-pack: center;
-      -webkit-justify-content: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-          -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  margin: 20px 0 50px 0;
-}
-
-.buttons-wrapper iframe {
-  margin: 0 10px !important;
-  margin-bottom: 10px !important;
-}
-
-.hsmall {
-  font-size: 12px;
-  padding: 4px 10px;
-}
-
-.hsmall:after {
-  padding: 3px 8px;
 }
 
 @media only screen and (max-width: 768px) {

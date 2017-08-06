@@ -5,6 +5,16 @@
 
 // Loop adding properties to classes
 
+.hpill {
+  @each $type in $borderproperties {
+    &.hb-border#{nth($type, 1)} {
+      &:after {
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
 .hbtn {
   @each $type in $borderproperties {
     &.hb-border#{nth($type, 1)}2 {

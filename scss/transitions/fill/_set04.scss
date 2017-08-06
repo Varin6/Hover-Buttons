@@ -32,7 +32,7 @@
 }
 
 .hb-fill {
-  &-top, &-right, &-bottom, &-left, &-on {
+  &-top, &-right, &-bottom, &-left, &-on, &-middle, &-middle2 {
     &-bg-br {
       background: transparent;
       color: $txtcolor;
@@ -47,7 +47,7 @@
 }
 
 .hb-fill {
-  &-top-rev, &-right-rev, &-bottom-rev, &-left-rev, &-on-rev {
+  &-top-rev, &-right-rev, &-bottom-rev, &-left-rev, &-on-rev, &-middle-rev, &-middle2-rev {
     &-bg-br {
       background: $btncolor;
       color: $txtcolorfill;
@@ -56,6 +56,106 @@
         background: transparent;
         color: $txtcolor;
         transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.hb-fill-middle {
+  &-bg-br {
+    &:after {
+      position: absolute;
+      content: '';
+      background: $btncolor;
+      transition-duration: .3s;
+      z-index: -1;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 100%;
+      height: 0;
+      opacity: 1;
+      border: solid $btnborder $btncolor;
+    }
+    &:hover {
+      &:after {
+        height: 50%;
+      }
+    }
+  }
+}
+
+.hb-fill-middle-rev {
+  &-bg-br {
+    &:after {
+      position: absolute;
+      content: '';
+      background: $btncolor;
+      transition-duration: .3s;
+      z-index: -1;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      opacity: 1;
+      border: solid $btnborder $btncolor;
+    }
+    &:hover {
+      &:after {
+        height: 0;
+      }
+    }
+  }
+}
+
+.hb-fill-middle2 {
+  &-bg-br {
+    &:after {
+      position: absolute;
+      content: '';
+      background: $btncolor;
+      transition-duration: .3s;
+      z-index: -1;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 0;
+      height: 100%;
+      opacity: 1;
+      border: solid $btnborder $btncolor;
+    }
+    &:hover {
+      &:after {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.hb-fill-middle2-rev {
+  &-bg-br {
+    &:after {
+      position: absolute;
+      content: '';
+      background: $btncolor;
+      transition-duration: .3s;
+      z-index: -1;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      opacity: 1;
+      border: solid $btnborder $btncolor;
+    }
+    &:hover {
+      &:after {
+        width: 0;
       }
     }
   }

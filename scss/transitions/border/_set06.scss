@@ -1,0 +1,159 @@
+//===================================
+// Border Transitions - Set 04
+//===================================
+
+
+// Loop adding properties to classes
+
+.hpill {
+  @each $type in $borderproperties {
+    &.hb-border#{nth($type, 1)} {
+      &-br4 {
+        &:after {
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+
+.hbtn {
+  @each $type in $borderproperties {
+    &.hb-border#{nth($type, 1)} {
+      &-br4 {
+        position: relative;
+        transition-duration: .3s;
+        overflow: visible;
+        box-sizing: border-box;
+        border: none;
+        padding: ($paddingY + 2px) ($paddingX + 2px);
+        &:after {
+          box-sizing: border-box;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          content: '';
+          border: solid $btnborder nth($type, 2);
+          z-index: 2;
+          margin:0 0;
+        }
+      }
+    }
+  }
+  &.hb-border-bottom-br4 {
+    &:after {
+      left:0;
+      bottom:0;
+      border-top-width:$btnborder;
+      transition:
+              border-top-width 0.1s 0.2s,
+              height  0.2s 0.1s,
+              width   0.2s 0.0s,
+              margin  0.2s 0.0s,
+              border-bottom-width 0.2s 0.0s;
+    }
+    &:hover {
+      &:after {
+        width: 60%;
+        height: 0px;
+        border-width: $btnborder;
+        border-top-width:0px;
+        border-bottom-width:$btnborder * 2;
+        margin: 0 20%;
+        transition:
+                border-top-width 0.1s 0.0s,
+                height 0.2s 0.1s,
+                width  0.2s 0.2s,
+                margin 0.2s 0.2s,
+                border-bottom-width 0.2s 0.2s;
+      }
+    }
+  }
+  &.hb-border-left-br4 {
+    &:after {
+      bottom:0;
+      left:0;
+      border-right-width:$btnborder;
+      transition:
+              border-right-width 0.1s 0.2s,
+              width  0.2s 0.1s,
+              height   0.2s 0.0s,
+              margin  0.2s 0.0s,
+              border-left-width 0.2s 0.0s;
+    }
+    &:hover {
+      &:after {
+        width: 0;
+        height: 60%;
+        border-width: $btnborder;
+        border-right-width:0px;
+        border-left-width: $btnborder * 2;
+        margin: 5% 0;
+        transition:
+                border-right-width 0.1s 0.0s,
+                width 0.2s 0.1s,
+                height  0.2s 0.2s,
+                margin 0.2s 0.2s,
+                border-left-width 0.2s 0.2s;
+      }
+    }
+  }
+  &.hb-border-top-br4 {
+    &:after {
+      top:0;
+      right:0;
+      border-bottom-width:$btnborder;
+      transition:
+              border-bottom-width 0.1s 0.2s,
+              height  0.2s 0.1s,
+              width   0.2s 0.0s,
+              margin  0.2s 0.0s,
+              border-top-width 0.2s 0.0s;
+    }
+    &:hover {
+      &:after {
+        width: 60%;
+        height: 0;
+        border-width: $btnborder;
+        border-bottom-width:0px;
+        border-top-width:$btnborder * 2;
+        margin: 0 20%;
+        transition:
+                border-bottom-width 0.1s 0.0s,
+                height 0.2s 0.1s,
+                width  0.2s 0.2s,
+                margin 0.2s 0.2s,
+                border-top-width 0.2s 0.2s;
+      }
+    }
+  }
+  &.hb-border-right-br4 {
+    &:after {
+      bottom:0;
+      right:0;
+      border-left-width:$btnborder;
+      transition:
+              border-left-width 0.1s 0.2s,
+              width  0.2s 0.1s,
+              height   0.2s 0.0s,
+              margin  0.2s 0.0s,
+              border-right-width  0.2s 0.0s;
+    }
+    &:hover {
+      &:after {
+        width: 0;
+        height: 60%;
+        border-width: $btnborder;
+        border-left-width:0px;
+        border-right-width:$btnborder * 2;
+        margin: 5% 0;
+        transition:
+                border-left-width 0.1s 0.0s,
+                width 0.2s 0.1s,
+                height  0.2s 0.2s,
+                margin 0.2s 0.2s,
+                border-right-width 0.2s 0.2s;
+      }
+    }
+  }
+}

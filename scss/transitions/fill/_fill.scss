@@ -12,6 +12,8 @@ $fillproperties:(
         "-left" 0 0 auto auto 0 100% 1 100% 100% 1,
         "-top" auto auto 0 0 100% 0 1 100% 100% 1,
         "-right" 0 auto auto 0 0 100% 1 100% 100% 1,
+        "-middle" auto auto 0 0 100% 0 1 100% 50% 1,
+        "-middle2" 0 0 auto auto 0 100% 1 50% 100% 1,
 
           //group 2
         "-on-rev" 0 auto auto 0 100% 100% 1 100% 100% 0,
@@ -19,5 +21,7 @@ $fillproperties:(
         "-left-rev" 0 0 auto auto 100% 100% 1 0 100% 1,
         "-top-rev" auto auto 0 0 100% 100% 1 100% 0 1,
         "-right-rev" 0 auto auto 0 100% 100% 1 0 100% 1,
+        "-middle-rev" auto auto 0 0 100% 50% 1 100% 0% 1,
+        "-middle2-rev" 0 0 auto auto 50% 100% 1 0 100% 1,
 );
 
