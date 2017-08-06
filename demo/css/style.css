@@ -141,7 +141,7 @@ h5 {
 
 .hsmall {
   font-size: 12px;
-  padding: 4px 10px;
+  padding: 4px 10px !important;
 }
 
 .class-helper {
@@ -227,6 +227,9 @@ h5 {
             -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0;
+  }
+  .options {
+    padding: 10px;
   }
   .class-helper {
     font-size: 1.2rem;

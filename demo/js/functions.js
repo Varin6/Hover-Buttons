@@ -29,7 +29,7 @@ $(function () {
         $(this).toggleClass('hpill');
         $('.class-helper').slideUp();
         $(this).text(function(i, text){
-            return text === "PILL!" ? "RECTANGLE!" : "PILL!";
+            return text === "RECTANGLE" ? "PILL" : "RECTANGLE";
         });
     });
 });
@@ -56,6 +56,13 @@ $(function () {
         }
     });
 });
+
+// $(function () {
+//     $('.changeColor').on('click', function (e) {
+//         e.preventDefault();
+//         $('.hbtn').addClass
+//     });
+// });
 
 // Add icons on click.
 $(function () {

@@ -121,9 +121,12 @@ h5 {
 
 .hsmall {
 	font-size: 12px;
-	padding: 4px 10px;
+	padding: 4px 10px !important;
 	&:after {
-		//padding: 3px 8px;
+		//padding: 4px 10px;
+	}
+	&:before {
+		//padding: 4px 10px;
 	}
 }
 
@@ -189,6 +192,10 @@ h5 {
 	.body-wrap {
 		flex-wrap: wrap;
 		padding:0;
+	}
+
+	.options {
+		padding:10px;
 	}
 
 	.class-helper {
