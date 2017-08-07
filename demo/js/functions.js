@@ -57,6 +57,18 @@ $(function () {
     });
 });
 
+$(function () {
+   var imagesArray = [
+                'url("demo/backgrounds/1.jpg")',
+                'url("demo/backgrounds/2.jpg")',
+                'url("demo/backgrounds/3.jpg")',
+                'url("demo/backgrounds/4.jpg")',
+                'url("demo/backgrounds/5.jpg")'
+            ];
+            var randBackground = Math.floor(Math.random() * (imagesArray.length));
+            $('body').addClass('body-overlay').css('background-image', imagesArray[randBackground]);
+});
+
 // $(function () {
 //     $('.changeColor').on('click', function (e) {
 //         e.preventDefault();
