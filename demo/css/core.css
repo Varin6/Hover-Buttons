@@ -2853,22 +2853,23 @@ html, body {
 
 body {
   background: #1e1e1e;
+  position: relative;
 }
 
-body.body-overlay {
+.body-overlay {
   position: relative;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
-body.body-overlay:after {
+.body-overlay:after {
   position: fixed;
   content: '';
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.55);
 }
