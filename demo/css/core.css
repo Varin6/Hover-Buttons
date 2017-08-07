@@ -2856,14 +2856,16 @@ body {
   position: relative;
 }
 
-.body-overlay {
+body.body-overlay {
   position: relative;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
-.body-overlay:after {
+body.body-overlay:after {
   position: fixed;
   content: '';
   top: 0;
