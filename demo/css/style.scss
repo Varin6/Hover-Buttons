@@ -14,24 +14,25 @@ html, body {
 body {
 	background: #1e1e1e;
 	position: relative;
-}
-
-.body-overlay {
-	position: relative;
-	background-size:cover;
-	background-position:center center;
-	background-attachment:fixed;
-	&:after {
-		position: fixed;
-		content: '';
-		top:0;
-		left:0;
-		width: 100vw;
-		height: 100vh;
-		z-index: -1;
-		background-color: rgba(#000, 0.55);
+	&.body-overlay {
+		position: relative;
+		background-size:cover;
+		background-position:center center;
+		background-attachment:fixed;
+		&:after {
+			position: fixed;
+			content: '';
+			top:0;
+			left:0;
+			width: 100vw;
+			height: 100vh;
+			z-index: -1;
+			background-color: rgba(#000, 0.55);
+		}
 	}
 }
+
+
 
 h1,h2,h3,h4,h5,h6 {
 	color: #ffffff;
