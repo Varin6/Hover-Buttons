@@ -13,24 +13,93 @@ body {
   position: relative;
 }
 
-body.body-overlay {
-  position: relative;
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.3s linear;
 }
 
-body.body-overlay:after {
+.body-overlay:after {
   position: fixed;
   content: '';
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.hbor1 {
+  border-width: 1px;
+}
+
+.hbor1:after, .hbor1:before {
+  border-width: 1px !important;
+}
+
+.hbor2 {
+  border-width: 2px;
+}
+
+.hbor2:after, .hbor2:before {
+  border-width: 2px !important;
+}
+
+.hbor3 {
+  border-width: 3px;
+}
+
+.hbor3:after, .hbor3:before {
+  border-width: 3px !important;
+}
+
+.hbor4 {
+  border-width: 4px;
+}
+
+.hbor4:after, .hbor4:before {
+  border-width: 4px !important;
+}
+
+.hbor5 {
+  border-width: 5px;
+}
+
+.hbor5:after, .hbor5:before {
+  border-width: 5px !important;
+}
+
+.hpad1 {
+  padding: 8px 20px !important;
+}
+
+.hpad2 {
+  padding: 12px 24px !important;
+}
+
+.hpad3 {
+  padding: 16px 28px !important;
+}
+
+.hpad4 {
+  padding: 20px 32px !important;
+}
+
+.hpad5 {
+  padding: 24px 36px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,13 +178,27 @@ h5 {
   font-size: 3rem;
 }
 
+.options {
+  padding: 10px;
+}
+
+.options a {
+  margin: 0 4px;
+}
+
+.options h5 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
 .options-fixed {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   background: #1e1e1e;
-  border-bottom: 2px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background: rgba(30, 30, 30, 0.9);
   z-index: 5;
 }
 

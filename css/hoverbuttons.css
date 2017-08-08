@@ -6,7 +6,7 @@
   padding: 8px 20px;
   margin: 0 3px 6px 3px;
   text-align: center;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   text-decoration: none;
   color: #ffffff;
   white-space: nowrap;
@@ -822,7 +822,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-on-br:hover:before {
@@ -844,7 +844,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-bottom-br:hover:before {
@@ -866,7 +866,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-left-br:hover:before {
@@ -888,7 +888,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-top-br:hover:before {
@@ -910,7 +910,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-right-br:hover:before {
@@ -932,7 +932,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle-br:hover:before {
@@ -954,7 +954,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle2-br:hover:before {
@@ -976,7 +976,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-on-rev-br:hover:before {
@@ -998,7 +998,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-bottom-rev-br:hover:before {
@@ -1020,7 +1020,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-left-rev-br:hover:before {
@@ -1042,7 +1042,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-top-rev-br:hover:before {
@@ -1064,7 +1064,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-right-rev-br:hover:before {
@@ -1086,7 +1086,7 @@
   width: 100%;
   height: 50%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle-rev-br:hover:before {
@@ -1108,7 +1108,7 @@
   width: 50%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle2-rev-br:hover:before {
@@ -1154,7 +1154,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle-br:hover:after {
@@ -1174,7 +1174,7 @@
   width: 100%;
   height: 50%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle-rev-br:hover:after {
@@ -1194,7 +1194,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle2-br:hover:after {
@@ -1214,7 +1214,7 @@
   width: 50%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle2-rev-br:hover:after {
@@ -1234,7 +1234,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-on-bg-br:hover:before {
@@ -1256,7 +1256,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-bottom-bg-br:hover:before {
@@ -1278,7 +1278,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-left-bg-br:hover:before {
@@ -1300,7 +1300,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-top-bg-br:hover:before {
@@ -1322,7 +1322,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-right-bg-br:hover:before {
@@ -1344,7 +1344,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle-bg-br:hover:before {
@@ -1366,7 +1366,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle2-bg-br:hover:before {
@@ -1388,7 +1388,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-on-rev-bg-br:hover:before {
@@ -1410,7 +1410,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-bottom-rev-bg-br:hover:before {
@@ -1432,7 +1432,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-left-rev-bg-br:hover:before {
@@ -1454,7 +1454,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-top-rev-bg-br:hover:before {
@@ -1476,7 +1476,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-right-rev-bg-br:hover:before {
@@ -1498,7 +1498,7 @@
   width: 100%;
   height: 50%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle-rev-bg-br:hover:before {
@@ -1520,7 +1520,7 @@
   width: 50%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hbtn.hb-fill-middle2-rev-bg-br:hover:before {
@@ -1566,7 +1566,7 @@
   width: 100%;
   height: 0;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle-bg-br:hover:after {
@@ -1586,7 +1586,7 @@
   width: 100%;
   height: 50%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle-rev-bg-br:hover:after {
@@ -1606,7 +1606,7 @@
   width: 0;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle2-bg-br:hover:after {
@@ -1626,7 +1626,7 @@
   width: 50%;
   height: 100%;
   opacity: 1;
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
 }
 
 .hb-fill-middle2-rev-bg-br:hover:after {
@@ -1884,47 +1884,47 @@
 }
 
 .hbtn.hb-border-top2 {
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-top2:hover {
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-right2 {
-  transition: all 0s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-right2:hover {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-bottom2 {
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-bottom2:hover {
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-left2 {
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hbtn.hb-border-left2:hover {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s 0s linear;
 }
 
 .hpill.hb-border-off-br:after {
@@ -1972,7 +1972,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -1993,7 +1993,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -2014,7 +2014,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -2035,7 +2035,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -2056,7 +2056,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -2077,7 +2077,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -2098,7 +2098,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
@@ -2110,7 +2110,7 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  border-top-width: 5px;
+  border-top-width: 4px;
   transition: border-right-color 0.1s 0s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0.14s linear, border-top-width 0.1s 0.14s linear;
 }
 
@@ -2122,7 +2122,7 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
-  border-right-width: 5px;
+  border-right-width: 4px;
   transition: border-bottom-color 0.1s 0s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0.14s linear, border-right-width 0.1s 0.14s linear;
 }
 
@@ -2134,7 +2134,7 @@
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  border-bottom-width: 5px;
+  border-bottom-width: 4px;
   transition: border-left-color 0.1s 0s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0.14s linear, border-bottom-width 0.1s 0.14s linear;
 }
 
@@ -2146,7 +2146,7 @@
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-width: 5px;
+  border-left-width: 4px;
   transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-width 0.1s 0.14s linear;
 }
 
@@ -2180,7 +2180,7 @@
 
 .hbtn.hb-border-off-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2195,13 +2195,13 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-off2-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2216,13 +2216,13 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-off3-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2237,13 +2237,13 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-top-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2258,13 +2258,13 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-right-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2279,13 +2279,13 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-bottom-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2300,13 +2300,13 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-left-br2 {
   position: relative;
-  transition-duration: .3s;
+  transition-duration: .2s;
   overflow: visible;
   box-sizing: border-box;
   border: none;
@@ -2321,56 +2321,56 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
 }
 
 .hbtn.hb-border-top-br2:after {
-  transition: all 0.1s 0.07s linear;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-top-br2:hover:after {
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  border-top-width: 5px;
-  transition: all 0.1s 0s linear;
+  border-top-width: 4px;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-right-br2:after {
-  transition: all 0.1s 0.07s linear;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-right-br2:hover:after {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
-  border-right-width: 5px;
-  transition: all 0.1s 0s linear;
+  border-right-width: 4px;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-bottom-br2:after {
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-bottom-br2:hover:after {
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  border-bottom-width: 5px;
-  transition: all 0.1s 0s linear;
+  border-bottom-width: 4px;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-left-br2:after {
-  transition: all 0.1s 0s linear;
+  transition: all 0.2s linear;
 }
 
 .hbtn.hb-border-left-br2:hover:after {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-width: 5px;
-  transition: all 0.1s 0s linear;
+  border-left-width: 4px;
+  transition: all 0.2s linear;
 }
 
 .hpill.hb-border-off-br3:after {
@@ -2416,7 +2416,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2436,7 +2436,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2456,7 +2456,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2476,7 +2476,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2496,7 +2496,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2516,7 +2516,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2536,7 +2536,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2544,14 +2544,14 @@
 .hbtn.hb-border-bottom-br3:after {
   left: 0;
   bottom: 0;
-  border-top-width: 3px;
+  border-top-width: 2px;
   transition: border-top-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-bottom-br3:hover:after {
   width: 60%;
   height: 0px;
-  border-width: 3px;
+  border-width: 2px;
   border-top-width: 0px;
   margin: 0 20%;
   transition: border-top-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s;
@@ -2560,14 +2560,14 @@
 .hbtn.hb-border-left-br3:after {
   bottom: 0;
   left: 0;
-  border-right-width: 3px;
+  border-right-width: 2px;
   transition: border-right-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-left-br3:hover:after {
   width: 0;
   height: 60%;
-  border-width: 3px;
+  border-width: 2px;
   border-right-width: 0px;
   margin: 5% 0;
   transition: border-right-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s;
@@ -2576,14 +2576,14 @@
 .hbtn.hb-border-top-br3:after {
   top: 0;
   right: 0;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
   transition: border-bottom-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-top-br3:hover:after {
   width: 60%;
   height: 0;
-  border-width: 3px;
+  border-width: 2px;
   border-bottom-width: 0px;
   margin: 0 20%;
   transition: border-bottom-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s;
@@ -2592,14 +2592,14 @@
 .hbtn.hb-border-right-br3:after {
   bottom: 0;
   right: 0;
-  border-left-width: 3px;
+  border-left-width: 2px;
   transition: border-left-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-right-br3:hover:after {
   width: 0;
   height: 60%;
-  border-width: 3px;
+  border-width: 2px;
   border-left-width: 0px;
   margin: 5% 0;
   transition: border-left-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s;
@@ -2648,7 +2648,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2668,7 +2668,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2688,7 +2688,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2708,7 +2708,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2728,7 +2728,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2748,7 +2748,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2768,7 +2768,7 @@
   width: 100%;
   height: 100%;
   content: '';
-  border: solid 3px #ffffff;
+  border: solid 2px #ffffff;
   z-index: 2;
   margin: 0 0;
 }
@@ -2776,16 +2776,16 @@
 .hbtn.hb-border-bottom-br4:after {
   left: 0;
   bottom: 0;
-  border-top-width: 3px;
+  border-top-width: 2px;
   transition: border-top-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s, border-bottom-width 0.2s 0.0s;
 }
 
 .hbtn.hb-border-bottom-br4:hover:after {
   width: 60%;
   height: 0px;
-  border-width: 3px;
+  border-width: 2px;
   border-top-width: 0px;
-  border-bottom-width: 6px;
+  border-bottom-width: 4px;
   margin: 0 20%;
   transition: border-top-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s, border-bottom-width 0.2s 0.2s;
 }
@@ -2793,16 +2793,16 @@
 .hbtn.hb-border-left-br4:after {
   bottom: 0;
   left: 0;
-  border-right-width: 3px;
+  border-right-width: 2px;
   transition: border-right-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s, border-left-width 0.2s 0.0s;
 }
 
 .hbtn.hb-border-left-br4:hover:after {
   width: 0;
   height: 60%;
-  border-width: 3px;
+  border-width: 2px;
   border-right-width: 0px;
-  border-left-width: 6px;
+  border-left-width: 4px;
   margin: 5% 0;
   transition: border-right-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s, border-left-width 0.2s 0.2s;
 }
@@ -2810,16 +2810,16 @@
 .hbtn.hb-border-top-br4:after {
   top: 0;
   right: 0;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
   transition: border-bottom-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s, border-top-width 0.2s 0.0s;
 }
 
 .hbtn.hb-border-top-br4:hover:after {
   width: 60%;
   height: 0;
-  border-width: 3px;
+  border-width: 2px;
   border-bottom-width: 0px;
-  border-top-width: 6px;
+  border-top-width: 4px;
   margin: 0 20%;
   transition: border-bottom-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s, border-top-width 0.2s 0.2s;
 }
@@ -2827,16 +2827,16 @@
 .hbtn.hb-border-right-br4:after {
   bottom: 0;
   right: 0;
-  border-left-width: 3px;
+  border-left-width: 2px;
   transition: border-left-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s, border-right-width  0.2s 0.0s;
 }
 
 .hbtn.hb-border-right-br4:hover:after {
   width: 0;
   height: 60%;
-  border-width: 3px;
+  border-width: 2px;
   border-left-width: 0px;
-  border-right-width: 6px;
+  border-right-width: 4px;
   margin: 5% 0;
   transition: border-left-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s, border-right-width 0.2s 0.2s;
 }

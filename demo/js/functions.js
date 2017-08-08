@@ -38,9 +38,8 @@ $(function () {
 $(function () {
     $('.changeBackground').on('click', function (e) {
         e.preventDefault();
-        if ($('body').hasClass('body-overlay')) {
-            $('body').css('background-image', 'none').removeClass('body-overlay');
-        } else {
+        if ($('.body-overlay').hasClass('hidden')) {
+
             var imagesArray = [
                 'url("demo/backgrounds/1.jpg")',
                 'url("demo/backgrounds/2.jpg")',
@@ -49,13 +48,91 @@ $(function () {
                 'url("demo/backgrounds/5.jpg")'
             ];
             var randBackground = Math.floor(Math.random() * (imagesArray.length));
-            $('body').addClass('body-overlay').css('background-image', imagesArray[randBackground]);
+            $('.body-overlay').removeClass('hidden').css('background-image', imagesArray[randBackground]);
 
             $('.class-helper').slideUp();
+        } else {
+            $('.body-overlay').addClass('hidden');
 
         }
     });
 });
+
+// Border change
+$(function () {
+    button = $('.hbtn').not($('.hbtn-x'));
+    $('.changeBorder').on('click', function (e) {
+        e.preventDefault();
+        console.log(button.css('border-width'))
+        if (button.css('border-width') == '1px') {
+            button.removeClass('hbor1 hbor3 hbor4 hbor5')
+            button.addClass('hbor2')
+        }
+        else if (button.css('border-width') == '2px') {
+            button.removeClass('hbor1 hbor2 hbor4 hbor5')
+            button.addClass('hbor3')
+        }
+        else if (button.css('border-width') == '3px') {
+            button.removeClass('hbor1 hbor2 hbor3 hbor5')
+            button.addClass('hbor4')
+        }
+        else if (button.css('border-width') == '4px') {
+            button.removeClass('hbor1 hbor3 hbor3 hbor4')
+            button.addClass('hbor5')
+        }
+        else if (button.css('border-width') == '5px') {
+            button.removeClass('hbor2 hbor3 hbor4 hbor5')
+            button.addClass('hbor1')
+        }
+    });
+});
+
+
+
+// Padding change
+$(function () {
+
+    button = $('.hbtn').not($('.hbtn-x'));
+
+    $('.changePadding').on('click', function (e) {
+        e.preventDefault();
+
+
+        //console.log($('.hbtn').hasClass('hpad1', 'hpad2', 'hpad3', 'hpad4', 'hpad5'));
+        //console.log(button.css('border-width'))
+        if (button.is('.hpad1, .hpad2, .hpad3, .hpad4, .hpad5') == false) {
+
+            button.addClass('hpad2');
+        }
+        else if (button.hasClass('hpad2')) {
+            button.removeClass('hpad2');
+            button.addClass('hpad3');
+        }
+        else if (button.hasClass('hpad3')) {
+            button.removeClass('hpad3');
+            button.addClass('hpad4');
+        }
+        else if (button.hasClass('hpad4')) {
+            button.removeClass('hpad4');
+            button.addClass('hpad5');
+        }
+        else if (button.hasClass('hpad5')) {
+            button.removeClass('hpad5');
+            button.addClass('hpad2');
+        }
+    });
+});
+
+// function hasBorders(myClass, myClass2) {
+//     button.each(function () {
+//         borders = /border/.test($(this).attr("class"));
+//         if (borders == false) {
+//             $(this).addClass(myClass)
+//         } else {
+//             $(this).addClass(myClass2)
+//         }
+//     });
+// }
 
 $(function () {
    var imagesArray = [
@@ -66,7 +143,7 @@ $(function () {
                 'url("demo/backgrounds/5.jpg")'
             ];
             var randBackground = Math.floor(Math.random() * (imagesArray.length));
-            $('body').addClass('body-overlay').css('background-image', imagesArray[randBackground]);
+            $('.body-overlay').removeClass('hidden').css('background-image', imagesArray[randBackground]);
 });
 
 // $(function () {
@@ -207,6 +284,7 @@ function showCss(selector, stylesheet) {
 
     buttonStyles[0].forEach(function(item, index, array) {
        // $('.class-helper .class-helper__inner2 pre').append(' ');
+        //console.log(item + index);
         $('.class-helper .class-helper__inner2 pre').append(buttonStyles[0][index] + ' {');
         $('.class-helper .class-helper__inner2 pre').append('<br>');
         string = buttonStyles[1][index];
@@ -267,14 +345,14 @@ function getAllIndexes(arr, val) {
 
 $(function () {
     var distance = $('div').offset().top;
-        console.log(distance);
+        //console.log(distance);
 });
 
 var distance = $('.options').offset().top,
     $window = $(window),
     height1 = $('.options').outerHeight();
 
-console.log(height1);
+//console.log(height1);
 
 
 
@@ -282,13 +360,13 @@ $window.scroll(function() {
     if ( $window.scrollTop() >= distance ) {
         $('.options').addClass('options-fixed');
         $('.body-wrap--light').css('margin-bottom', height1 +'px');
-        console.log(distance);
+        //console.log(distance);
     }
 
     if ( $window.scrollTop() < distance ) {
         $('.options').removeClass('options-fixed');
         $('.body-wrap--light').css('margin-bottom','0px');
-        console.log(distance);
+        //console.log(distance);
     }
 
 });

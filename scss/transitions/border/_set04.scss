@@ -23,7 +23,7 @@
     &.hb-border#{nth($type, 1)} {
       &-br2 {
         position: relative;
-        transition-duration: .3s;
+        transition-duration: .2s;
         overflow: visible;
         box-sizing: border-box;
         border: none;
@@ -44,7 +44,7 @@
   }
   &.hb-border-top-br2 {
     &:after {
-      transition: all 0.1s 0.07s linear;
+      transition: all 0.2s linear;
     }
     &:hover {
       &:after {
@@ -52,13 +52,13 @@
         border-bottom-color: transparent;
         border-left-color: transparent;
         border-top-width: $btnborder + 2px;
-        transition: all 0.1s 0s linear;
+        transition: all 0.2s linear;
       }
     }
   }
   &.hb-border-right-br2 {
     &:after {
-      transition: all 0.1s 0.07s linear;
+      transition: all 0.2s linear;
     }
     &:hover {
       &:after {
@@ -66,13 +66,13 @@
         border-left-color: transparent;
         border-top-color: transparent;
         border-right-width: $btnborder + 2px;
-        transition: all 0.1s 0s linear;
+        transition: all 0.2s linear;
       }
     }
   }
   &.hb-border-bottom-br2 {
     &:after {
-      transition: all 0.1s 0s linear;
+      transition: all 0.2s linear;
     }
     &:hover {
       &:after {
@@ -80,13 +80,13 @@
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-width: $btnborder + 2px;
-        transition: all 0.1s 0s linear;
+        transition: all 0.2s linear;
       }
     }
   }
   &.hb-border-left-br2 {
     &:after {
-      transition: all 0.1s 0s linear;
+      transition: all 0.2s linear;
     }
     &:hover {
       &:after {
@@ -94,7 +94,7 @@
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-width: $btnborder + 2px;
-        transition: all 0.1s 0s linear;
+        transition: all 0.2s linear;
       }
     }
   }
