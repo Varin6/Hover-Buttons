@@ -242,7 +242,7 @@ function getSelectorCss(selector, stylesheet) {
                 if (mySelector.match(/,/)) {  //if mySelector has commas:
                      mySelectorArray = mySelector.split(',');  //split into array where commas separate items
                      mySelectorArray.forEach(function(itemP, indexP) {  //cycle through the array
-                         regexSelector = new RegExp(selector + '.*');
+                         regexSelector = new RegExp(selector + '(?:$|[^0-9]+)');
                          finalSelector = itemP.match(regexSelector);
                          if (finalSelector !== null) {
                              selectorLoopResult = finalSelector[0];
