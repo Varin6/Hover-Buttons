@@ -22,7 +22,7 @@ Hover Transition CSS/SCSS Buttons
 - `npm run watch` if you want it to watch and compile your SCSS as you work on it
 - Comment out sets you don't need in `/scss/hoverbuttons.scss`
 - Adjust your variables in `/scss/_variables.scss`
-- Compile and add CSS file to your project
+- Compile by running `npm run prod` or `npm run dev` and add the `hoverbuttons.css` file to your project
 
 <br>
 
