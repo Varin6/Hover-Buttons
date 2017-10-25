@@ -2,6 +2,7 @@ let mix              = require('laravel-mix');
 let LiveReloadPlugin = require('webpack-livereload-plugin');
 
 mix
+    .disableNotifications()
     .setPublicPath('../Hover-Buttons')
     .setResourceRoot('../Hover-Buttons')
     .options(
