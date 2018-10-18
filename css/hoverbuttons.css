@@ -136,7 +136,7 @@
   right: auto;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 0;
   opacity: 1;
 }
@@ -318,25 +318,29 @@
 .hb-fill-top, .hb-fill-right, .hb-fill-bottom, .hb-fill-left, .hb-fill-on, .hb-fill-middle, .hb-fill-middle2 {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: color 0.3s ease,
+ background 0s ease;
 }
 
 .hb-fill-top:hover, .hb-fill-right:hover, .hb-fill-bottom:hover, .hb-fill-left:hover, .hb-fill-on:hover, .hb-fill-middle:hover, .hb-fill-middle2:hover {
   color: #000000;
   background: #ffffff;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: color 0.3s ease,
+ background 0s 0.3s ease;
 }
 
 .hb-fill-top-rev, .hb-fill-right-rev, .hb-fill-bottom-rev, .hb-fill-left-rev, .hb-fill-on-rev, .hb-fill-middle-rev, .hb-fill-middle2-rev {
   background: #ffffff;
   color: #000000;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: color 0.3s ease,
+ background 0s 0.3s ease;
 }
 
 .hb-fill-top-rev:hover, .hb-fill-right-rev:hover, .hb-fill-bottom-rev:hover, .hb-fill-left-rev:hover, .hb-fill-on-rev:hover, .hb-fill-middle-rev:hover, .hb-fill-middle2-rev:hover {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: color 0.3s ease,
+ background 0s ease;
 }
 
 .hb-fill-middle:after {
@@ -1120,25 +1124,29 @@
 .hb-fill-top-br, .hb-fill-right-br, .hb-fill-bottom-br, .hb-fill-left-br, .hb-fill-on-br, .hb-fill-middle-br, .hb-fill-middle2-br {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: color 0.3s ease,
+ background 0s ease;
 }
 
 .hb-fill-top-br:hover, .hb-fill-right-br:hover, .hb-fill-bottom-br:hover, .hb-fill-left-br:hover, .hb-fill-on-br:hover, .hb-fill-middle-br:hover, .hb-fill-middle2-br:hover {
   color: #000000;
   background: #ffffff;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: color 0.3s ease,
+ background 0s 0.3s ease;
 }
 
 .hb-fill-top-rev-br, .hb-fill-right-rev-br, .hb-fill-bottom-rev-br, .hb-fill-left-rev-br, .hb-fill-on-rev-br, .hb-fill-middle-rev-br, .hb-fill-middle2-rev-br {
   background: #ffffff;
   color: #000000;
-  transition: color 0.3s ease, background 0s 0.3s ease;
+  transition: color 0.3s ease,
+ background 0s 0.3s ease;
 }
 
 .hb-fill-top-rev-br:hover, .hb-fill-right-rev-br:hover, .hb-fill-bottom-rev-br:hover, .hb-fill-left-rev-br:hover, .hb-fill-on-rev-br:hover, .hb-fill-middle-rev-br:hover, .hb-fill-middle2-rev-br:hover {
   background: transparent;
   color: #ffffff;
-  transition: color 0.3s ease, background 0s ease;
+  transition: color 0.3s ease,
+ background 0s ease;
 }
 
 .hb-fill-middle-br:after {
@@ -1725,7 +1733,10 @@
 }
 
 .hbtn.hb-border-off2 {
-  transition: border-top-color 0.1s 0.21s linear, border-right-color 0.1s 0.14s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0s linear;
+  transition: border-top-color 0.1s 0.21s linear,
+ border-right-color 0.1s 0.14s linear,
+ border-bottom-color 0.1s 0.07s linear,
+ border-left-color 0.1s 0s linear;
 }
 
 .hbtn.hb-border-off2:hover {
@@ -1733,11 +1744,17 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.21s linear;
+  transition: border-top-color 0.1s 0s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0.14s linear,
+ border-left-color 0.1s 0.21s linear;
 }
 
 .hbtn.hb-border-off3 {
-  transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.21s linear;
+  transition: border-top-color 0.1s 0s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0.14s linear,
+ border-left-color 0.1s 0.21s linear;
 }
 
 .hbtn.hb-border-off3:hover {
@@ -1745,51 +1762,70 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.21s linear;
+  transition: border-top-color 0.1s 0s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0.14s linear,
+ border-left-color 0.1s 0.21s linear;
 }
 
 .hbtn.hb-border-top {
-  transition: border-right-color 0.1s 0.14s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0s linear;
+  transition: border-right-color 0.1s 0.14s linear,
+ border-bottom-color 0.1s 0.07s linear,
+ border-left-color 0.1s 0s linear;
 }
 
 .hbtn.hb-border-top:hover {
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  transition: border-right-color 0.1s 0s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0.14s linear;
+  transition: border-right-color 0.1s 0s linear,
+ border-bottom-color 0.1s 0.07s linear,
+ border-left-color 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-right {
-  transition: border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0s linear;
+  transition: border-bottom-color 0.1s 0.14s linear,
+ border-left-color 0.1s 0.07s linear,
+ border-top-color 0.1s 0s linear;
 }
 
 .hbtn.hb-border-right:hover {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
-  transition: border-bottom-color 0.1s 0s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0.14s linear;
+  transition: border-bottom-color 0.1s 0s linear,
+ border-left-color 0.1s 0.07s linear,
+ border-top-color 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-bottom {
-  transition: border-left-color 0.1s 0.14s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0s linear;
+  transition: border-left-color 0.1s 0.14s linear,
+ border-top-color 0.1s 0.07s linear,
+ border-right-color 0.1s 0s linear;
 }
 
 .hbtn.hb-border-bottom:hover {
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  transition: border-left-color 0.1s 0s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0.14s linear;
+  transition: border-left-color 0.1s 0s linear,
+ border-top-color 0.1s 0.07s linear,
+ border-right-color 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-left {
-  transition: border-top-color 0.1s 0.14s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0s linear;
+  transition: border-top-color 0.1s 0.14s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0s linear;
 }
 
 .hbtn.hb-border-left:hover {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear;
+  transition: border-top-color 0.1s 0s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0.14s linear;
 }
 
 .hpill.hb-border-off:after {
@@ -2103,7 +2139,10 @@
 }
 
 .hbtn.hb-border-top-br:after {
-  transition: border-right-color 0.1s 0.14s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0s linear, border-top-width 0.1s 0s linear;
+  transition: border-right-color 0.1s 0.14s linear,
+ border-bottom-color 0.1s 0.07s linear,
+ border-left-color 0.1s 0s linear,
+ border-top-width 0.1s 0s linear;
 }
 
 .hbtn.hb-border-top-br:hover:after {
@@ -2111,11 +2150,17 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-top-width: 4px;
-  transition: border-right-color 0.1s 0s linear, border-bottom-color 0.1s 0.07s linear, border-left-color 0.1s 0.14s linear, border-top-width 0.1s 0.14s linear;
+  transition: border-right-color 0.1s 0s linear,
+ border-bottom-color 0.1s 0.07s linear,
+ border-left-color 0.1s 0.14s linear,
+ border-top-width 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-right-br:after {
-  transition: border-bottom-color 0.1s 0.14s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0s linear, border-right-width 0.1s 0s linear;
+  transition: border-bottom-color 0.1s 0.14s linear,
+ border-left-color 0.1s 0.07s linear,
+ border-top-color 0.1s 0s linear,
+ border-right-width 0.1s 0s linear;
 }
 
 .hbtn.hb-border-right-br:hover:after {
@@ -2123,11 +2168,17 @@
   border-left-color: transparent;
   border-top-color: transparent;
   border-right-width: 4px;
-  transition: border-bottom-color 0.1s 0s linear, border-left-color 0.1s 0.07s linear, border-top-color 0.1s 0.14s linear, border-right-width 0.1s 0.14s linear;
+  transition: border-bottom-color 0.1s 0s linear,
+ border-left-color 0.1s 0.07s linear,
+ border-top-color 0.1s 0.14s linear,
+ border-right-width 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-bottom-br:after {
-  transition: border-left-color 0.1s 0.14s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0s linear, border-bottom-width 0.1s 0.14s linear;
+  transition: border-left-color 0.1s 0.14s linear,
+ border-top-color 0.1s 0.07s linear,
+ border-right-color 0.1s 0s linear,
+ border-bottom-width 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-bottom-br:hover:after {
@@ -2135,11 +2186,17 @@
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-width: 4px;
-  transition: border-left-color 0.1s 0s linear, border-top-color 0.1s 0.07s linear, border-right-color 0.1s 0.14s linear, border-bottom-width 0.1s 0.14s linear;
+  transition: border-left-color 0.1s 0s linear,
+ border-top-color 0.1s 0.07s linear,
+ border-right-color 0.1s 0.14s linear,
+ border-bottom-width 0.1s 0.14s linear;
 }
 
 .hbtn.hb-border-left-br:after {
-  transition: border-top-color 0.1s 0.14s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0s linear, border-left-width 0.1s 0s linear;
+  transition: border-top-color 0.1s 0.14s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0s linear,
+ border-left-width 0.1s 0s linear;
 }
 
 .hbtn.hb-border-left-br:hover:after {
@@ -2147,7 +2204,10 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-width: 4px;
-  transition: border-top-color 0.1s 0s linear, border-right-color 0.1s 0.07s linear, border-bottom-color 0.1s 0.14s linear, border-left-width 0.1s 0.14s linear;
+  transition: border-top-color 0.1s 0s linear,
+ border-right-color 0.1s 0.07s linear,
+ border-bottom-color 0.1s 0.14s linear,
+ border-left-width 0.1s 0.14s linear;
 }
 
 .hpill.hb-border-off-br2:after {
@@ -2545,7 +2605,10 @@
   left: 0;
   bottom: 0;
   border-top-width: 2px;
-  transition: border-top-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s;
+  transition: border-top-width 0.1s 0.2s,
+ height  0.2s 0.1s,
+ width   0.2s 0.0s,
+ margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-bottom-br3:hover:after {
@@ -2554,14 +2617,20 @@
   border-width: 2px;
   border-top-width: 0px;
   margin: 0 20%;
-  transition: border-top-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s;
+  transition: border-top-width 0.1s 0.0s,
+ height 0.2s 0.1s,
+ width  0.2s 0.2s,
+ margin 0.2s 0.2s;
 }
 
 .hbtn.hb-border-left-br3:after {
   bottom: 0;
   left: 0;
   border-right-width: 2px;
-  transition: border-right-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s;
+  transition: border-right-width 0.1s 0.2s,
+ width  0.2s 0.1s,
+ height   0.2s 0.0s,
+ margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-left-br3:hover:after {
@@ -2570,14 +2639,20 @@
   border-width: 2px;
   border-right-width: 0px;
   margin: 5% 0;
-  transition: border-right-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s;
+  transition: border-right-width 0.1s 0.0s,
+ width 0.2s 0.1s,
+ height  0.2s 0.2s,
+ margin 0.2s 0.2s;
 }
 
 .hbtn.hb-border-top-br3:after {
   top: 0;
   right: 0;
   border-bottom-width: 2px;
-  transition: border-bottom-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s;
+  transition: border-bottom-width 0.1s 0.2s,
+ height  0.2s 0.1s,
+ width   0.2s 0.0s,
+ margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-top-br3:hover:after {
@@ -2586,14 +2661,20 @@
   border-width: 2px;
   border-bottom-width: 0px;
   margin: 0 20%;
-  transition: border-bottom-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s;
+  transition: border-bottom-width 0.1s 0.0s,
+ height 0.2s 0.1s,
+ width  0.2s 0.2s,
+ margin 0.2s 0.2s;
 }
 
 .hbtn.hb-border-right-br3:after {
   bottom: 0;
   right: 0;
   border-left-width: 2px;
-  transition: border-left-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s;
+  transition: border-left-width 0.1s 0.2s,
+ width  0.2s 0.1s,
+ height   0.2s 0.0s,
+ margin  0.2s 0.0s;
 }
 
 .hbtn.hb-border-right-br3:hover:after {
@@ -2602,7 +2683,10 @@
   border-width: 2px;
   border-left-width: 0px;
   margin: 5% 0;
-  transition: border-left-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s;
+  transition: border-left-width 0.1s 0.0s,
+ width 0.2s 0.1s,
+ height  0.2s 0.2s,
+ margin 0.2s 0.2s;
 }
 
 .hpill.hb-border-off-br4:after {
@@ -2777,7 +2861,11 @@
   left: 0;
   bottom: 0;
   border-top-width: 2px;
-  transition: border-top-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s, border-bottom-width 0.2s 0.0s;
+  transition: border-top-width 0.1s 0.2s,
+ height  0.2s 0.1s,
+ width   0.2s 0.0s,
+ margin  0.2s 0.0s,
+ border-bottom-width 0.2s 0.0s;
 }
 
 .hbtn.hb-border-bottom-br4:hover:after {
@@ -2787,14 +2875,22 @@
   border-top-width: 0px;
   border-bottom-width: 4px;
   margin: 0 20%;
-  transition: border-top-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s, border-bottom-width 0.2s 0.2s;
+  transition: border-top-width 0.1s 0.0s,
+ height 0.2s 0.1s,
+ width  0.2s 0.2s,
+ margin 0.2s 0.2s,
+ border-bottom-width 0.2s 0.2s;
 }
 
 .hbtn.hb-border-left-br4:after {
   bottom: 0;
   left: 0;
   border-right-width: 2px;
-  transition: border-right-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s, border-left-width 0.2s 0.0s;
+  transition: border-right-width 0.1s 0.2s,
+ width  0.2s 0.1s,
+ height   0.2s 0.0s,
+ margin  0.2s 0.0s,
+ border-left-width 0.2s 0.0s;
 }
 
 .hbtn.hb-border-left-br4:hover:after {
@@ -2804,14 +2900,22 @@
   border-right-width: 0px;
   border-left-width: 4px;
   margin: 5% 0;
-  transition: border-right-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s, border-left-width 0.2s 0.2s;
+  transition: border-right-width 0.1s 0.0s,
+ width 0.2s 0.1s,
+ height  0.2s 0.2s,
+ margin 0.2s 0.2s,
+ border-left-width 0.2s 0.2s;
 }
 
 .hbtn.hb-border-top-br4:after {
   top: 0;
   right: 0;
   border-bottom-width: 2px;
-  transition: border-bottom-width 0.1s 0.2s, height  0.2s 0.1s, width   0.2s 0.0s, margin  0.2s 0.0s, border-top-width 0.2s 0.0s;
+  transition: border-bottom-width 0.1s 0.2s,
+ height  0.2s 0.1s,
+ width   0.2s 0.0s,
+ margin  0.2s 0.0s,
+ border-top-width 0.2s 0.0s;
 }
 
 .hbtn.hb-border-top-br4:hover:after {
@@ -2821,14 +2925,22 @@
   border-bottom-width: 0px;
   border-top-width: 4px;
   margin: 0 20%;
-  transition: border-bottom-width 0.1s 0.0s, height 0.2s 0.1s, width  0.2s 0.2s, margin 0.2s 0.2s, border-top-width 0.2s 0.2s;
+  transition: border-bottom-width 0.1s 0.0s,
+ height 0.2s 0.1s,
+ width  0.2s 0.2s,
+ margin 0.2s 0.2s,
+ border-top-width 0.2s 0.2s;
 }
 
 .hbtn.hb-border-right-br4:after {
   bottom: 0;
   right: 0;
   border-left-width: 2px;
-  transition: border-left-width 0.1s 0.2s, width  0.2s 0.1s, height   0.2s 0.0s, margin  0.2s 0.0s, border-right-width  0.2s 0.0s;
+  transition: border-left-width 0.1s 0.2s,
+ width  0.2s 0.1s,
+ height   0.2s 0.0s,
+ margin  0.2s 0.0s,
+ border-right-width  0.2s 0.0s;
 }
 
 .hbtn.hb-border-right-br4:hover:after {
@@ -2838,5 +2950,9 @@
   border-left-width: 0px;
   border-right-width: 4px;
   margin: 5% 0;
-  transition: border-left-width 0.1s 0.0s, width 0.2s 0.1s, height  0.2s 0.2s, margin 0.2s 0.2s, border-right-width 0.2s 0.2s;
+  transition: border-left-width 0.1s 0.0s,
+ width 0.2s 0.1s,
+ height  0.2s 0.2s,
+ margin 0.2s 0.2s,
+ border-right-width 0.2s 0.2s;
 }
